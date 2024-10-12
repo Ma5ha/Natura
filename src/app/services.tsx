@@ -1,3 +1,4 @@
+import { Waves } from "@/public/waves";
 import { Apple, Bed, Stethoscope, Users, Volleyball } from "lucide-react";
 
 const leftSideCards = [
@@ -26,7 +27,7 @@ const rightSideCards = [
 
 export default function Services() {
   return (
-    <section className="min-h-full snap-center p-5 md:p-20 *:mb-20 flex flex-wrap  gap-10 justify-center items-center">
+    <section className="min-h-full snap-center p-5 md:p-20 *:mb-20 flex flex-wrap  gap-10 justify-center items-center relative">
       <div className="flex flex-col grow md:max-w-[20ch] md:min-w-[20ch] order-3 lg:order-none gap-10 justify-center">
         {leftSideCards.map(({ label, data, Icon }) => (
           <div className="card w-full">
@@ -74,6 +75,8 @@ export default function Services() {
           </div>
         ))}
       </div>
+
+      <Waves className="absolute h-[100px] -bottom-20" />
     </section>
   );
 }
