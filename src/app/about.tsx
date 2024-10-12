@@ -3,9 +3,9 @@ import { Story } from "@/public/story";
 
 export default function About() {
   return (
-    <section className="min-h-full snap-center p-20 *:mb-20">
+    <section className="min-h-full snap-center p-5 md:p-20 *:mb-20">
       <div className="flex gap-20 items-center justify-center flex-wrap">
-        <div className="max-w-[50ch]">
+        <div className="max-w-prose">
           <h1 className="title mb-10">Our Mission</h1>
           <p>
             Naš dom postoji još od 2012. godine. udaljen 200m od magistralnog
@@ -18,8 +18,8 @@ export default function About() {
         <Mission />
       </div>
       <div className="flex gap-20 items-center justify-center flex-wrap">
-        <Story className="order-1 lg:order-none" />
-        <div className="max-w-[50ch]">
+        <Story className="order-1 xl:order-none" />
+        <div className="max-w-prose">
           <h1 className="title mb-10">Our story</h1>
           <p>
             Naš dom postoji još od 2012. godine. udaljen 200m od magistralnog

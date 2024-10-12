@@ -15,6 +15,23 @@ main {
         letter-spacing: 1px;
     }
 
+    .card{
+        @apply shadow-sm w-fit rounded-lg p-5
+    }
+
+    .card-sublabel {
+        @apply text-[15px] font-light
+    }
+
+    .card-data{
+        @apply text-[32px] font-bold;
+
+       
+    }
+
+    .card-data::nth-letter(2){
+        color:black
+    }
    
 }
 
