@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+main {
+    scrollbar-color:  #00A28E  gray ;
+}
 
 @layer components {
     .title {
@@ -9,7 +12,9 @@
     }
 
     p {
-        letter-spacing: 9%;
+        letter-spacing: 1px;
     }
+
+   
 }
 
