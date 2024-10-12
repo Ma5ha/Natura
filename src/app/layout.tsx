@@ -14,9 +14,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="font-inter ">
+      <body className="font-inter pt-[64px]  h-screen">
         <Nav />
-        <main className="bg-primary/250 h-screen w-full pt-[64px]">
+        <main className="bg-primary/250 h-full w-full snap-y snap-mandatory overflow-scroll  ">
           {children}
         </main>
       </body>

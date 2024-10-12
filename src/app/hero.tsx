@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function Hero() {
-  return <section className="h-full bg-gray-50"></section>;
+  return <section className="h-full snap-center  bg-gray-400"></section>;
 }
