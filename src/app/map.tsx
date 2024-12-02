@@ -163,7 +163,7 @@ function MyComponent() {
           mapContainerStyle={containerStyle}
           center={center}
           zoom={10}
-          options={{ styles: mapStyle }}
+          options={{ styles: mapStyle, disableDefaultUI: true }}
         >
           <Marker position={center}></Marker>
         </GoogleMap>
