@@ -1,8 +1,8 @@
 import { typography } from "@/ui/variants";
 import { Mail, Phone } from "lucide-react";
 import Image from "next/image";
-import facebook from "@public/facebook-logo.png";
-import instagram from "@public/instagram-logo.png";
+import facebook from "../public/facebook-logo.png";
+import instagram from "../public/instagram-logo.png";
 import { twMerge } from "tailwind-merge";
 
 const links = ["Home", "About", "Services", "Contact"];

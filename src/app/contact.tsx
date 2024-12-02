@@ -1,7 +1,6 @@
 import { button, typography } from "@/ui/variants";
-import { Clock, Cross, Info, Mail, MapPin, Locate } from "lucide-react";
+import { Clock, Cross, Info, Mail, MapPin } from "lucide-react";
 import { twMerge } from "tailwind-merge";
-import Map from "./map";
 
 const info = [
   { title: "Email", Icon: Mail, children: "naturainfo@gmail.com" },
@@ -46,7 +45,10 @@ export default function Contact() {
         className="flex flex-wrap max-w-prose gap-2 xl:flex-col l:w-[30ch] lg:self-start"
       >
         {info.map(({ title, Icon, children }) => (
-          <div className="card bg-white sm:w-[30ch] grow  last:mr-auto max-w-1/2">
+          <div
+            key={title}
+            className="card bg-white sm:w-[30ch] grow  last:mr-auto max-w-1/2"
+          >
             <div className="flex gap-2 ">
               <Icon className="stroke-primary" />
               <h3
