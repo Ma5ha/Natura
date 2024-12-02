@@ -1,5 +1,7 @@
 import { Waves } from "@/public/waves";
+import { typography } from "@/ui/variants";
 import { Apple, Bed, Stethoscope, Users, Volleyball } from "lucide-react";
+import { twMerge } from "tailwind-merge";
 
 const leftSideCards = [
   { label: "Activity", data: 35, Icon: Volleyball },
@@ -27,25 +29,13 @@ const rightSideCards = [
 
 export default function Services() {
   return (
-    <section className="min-h-full snap-center p-5 md:p-20 *:mb-20 flex flex-wrap  gap-10 justify-center items-center relative">
-      <div className="flex flex-col grow md:max-w-[20ch] md:min-w-[20ch] order-3 lg:order-none gap-10 justify-center">
-        {leftSideCards.map(({ label, data, Icon }) => (
-          <div className="card w-full">
-            <div className="flex gap-2">
-              <Icon className="stroke-primary " />{" "}
-              <label className="card-sublabel">{label}</label>
-            </div>
-
-            <p className="card-data text-primary ">
-              {data}
-              <span className="text-black">+</span>
-            </p>
-          </div>
-        ))}
-      </div>
-      <div className="max-w-prose">
+    <section
+      id="services"
+      className="page snap-start flex flex-wrap xl:flex-nowrap gap-10 justify-center items-top relative"
+    >
+      <div className="max-w-prose bg-white px-5 py-20 h-full card backdrop-blur max-h-[800px]">
         <h1 className="title mb-10">Services</h1>
-        <p>
+        <p className={twMerge("text-justify ", typography())}>
           "Natura" offers a comprehensive care program for the elderly,
           providing tailored medical and personal services. Our highly qualified
           nurses and caregivers are always available, ensuring personal care and
@@ -63,20 +53,35 @@ export default function Services() {
           environment for all residents.
         </p>
       </div>
-      <div className="md:max-w-[30ch]">
+      <div className="flex max-w-prose flex-wrap *:grow order-first *:w-[20ch] sm:flex-row sm:flex-wrap gap-2 items-start xl:h-fit xl:flex-col">
+        {leftSideCards.map(({ label, data, Icon }) => (
+          <div className="card bg-white">
+            <div className="flex gap-2">
+              <Icon className="stroke-primary " />
+              <label className="card-sublabel">{label}</label>
+            </div>
+
+            <p className="card-data text-primary ">
+              {data}
+              <span className="text-black">+</span>
+            </p>
+          </div>
+        ))}
+      </div>
+      <div className="max-w-prose w-full flex flex-col sm:flex-row sm:w-fit xl:flex-col gap-2">
         {rightSideCards.map(({ label, desc, Icon }) => (
-          <div className="w-full mt-10">
+          <div className=" bg-white card first:mt-0 md:w-[25ch] ">
             <div className="flex gap-2">
               <Icon className="stroke-primary " />{" "}
               <h3 className="text-xl font-semibold">{label}</h3>
             </div>
 
-            <p className="mt-5">{desc}</p>
+            <p className={twMerge(typography(), "mt-5")}>{desc}</p>
           </div>
         ))}
       </div>
 
-      <Waves className="absolute h-[100px] -bottom-20" />
+      {/* <Waves className="absolute h-[100px] w-screen *:w-screen -bottom-20" /> */}
     </section>
   );
 }

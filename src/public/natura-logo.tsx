@@ -1,4 +1,4 @@
-import { FC, HTMLAttributes, SVGProps } from "react";
+import { FC, SVGProps } from "react";
 
 export const NaturaLogo: FC<SVGProps<SVGSVGElement>> = (props) => (
   <svg

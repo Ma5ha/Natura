@@ -1,4 +1,4 @@
-import { FC, HTMLAttributes, SVGProps } from "react";
+import { FC, SVGProps } from "react";
 
 export const Mission: FC<SVGProps<SVGSVGElement>> = (props) => (
   <svg
@@ -674,8 +674,8 @@ export const Mission: FC<SVGProps<SVGSVGElement>> = (props) => (
         y2="-130.325"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#70D3C7" />
-        <stop offset="1" stop-color="#FFFAFA" />
+        <stop stopColor="#70D3C7" />
+        <stop offset="1" stopColor="#FFFAFA" />
       </linearGradient>
     </defs>
   </svg>

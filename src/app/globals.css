@@ -2,36 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
-main {
-    scrollbar-color:  #00A28E  gray ;
+
+@layer base {
+  main {
+    scrollbar-color: #018979 rgb(213, 213, 213);
+  }
+
+  .page {
+    min-height: calc(100vh - 64px);
+    @apply p-5 md:p-20
+  }
 }
 
 @layer components {
-    .title {
-        @apply text-[36px]  font-semibold
-    }
+  .title {
+    @apply text-[36px]  font-semibold;
+  }
 
-    p {
-        letter-spacing: 1px;
-    }
+  p {
+    letter-spacing: 1px;
+  }
 
-    .card{
-        @apply shadow-sm w-fit rounded-lg p-5
-    }
+  .card {
+    @apply shadow-sm w-fit rounded-lg p-5;
+  }
 
-    .card-sublabel {
-        @apply text-[15px] font-light
-    }
+  .card-sublabel {
+    @apply text-[15px] font-light;
+  }
 
-    .card-data{
-        @apply text-[32px] font-bold;
+  .card-data {
+    @apply text-[32px] font-bold;
+  }
 
-       
-    }
+  .card-data::nth-letter(2) {
+    color: black;
+  }
 
-    .card-data::nth-letter(2){
-        color:black
-    }
-   
+  input,
+  textarea {
+    @apply rounded-md px-3 py-4 bg-gray-50 outline-primary;
+  }
+
+  textarea {
+    height: 200px;
+  }
+
+  label {
+    @apply font-medium;
+  }
+
+  .input-control {
+    @apply flex flex-col;
+  }
+
+  #map-container{ @apply relative}
+
+ 
 }
-
