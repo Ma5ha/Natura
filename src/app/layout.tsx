@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import "@fontsource/eb-garamond/400.css";
+import "@fontsource/eb-garamond/500.css";
+import "@fontsource/eb-garamond/600.css";
+import "@fontsource/eb-garamond/700.css";
 import "./globals.css";
 import Nav from "./nav";
 import Footer from "./footer";
