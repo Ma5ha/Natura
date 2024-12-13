@@ -2,6 +2,7 @@ import { button, typography } from "@/ui/variants";
 import { Clock, Cross, Info, Mail, MapPin } from "lucide-react";
 import { twMerge } from "tailwind-merge";
 import { getTranslations } from "next-intl/server";
+import Input from "@/app/components/input";
 
 const translateCards = async () => {
   const t = await getTranslations("sections.contact");
@@ -72,25 +73,25 @@ export default async function Contact() {
         <h2 className="title">{t("title")}</h2>
 
         <div className="flex flex-wrap gap-8 w-full">
-          <div className="input-control grow">
-            <label>{t("form.email")}</label>
-            <input placeholder={t("form.placeholders.email")} />
-          </div>
-          <div className="input-control grow">
-            <label>{t("form.subject")}</label>
-            <input placeholder={t("form.placeholders.subject")} />
-          </div>
+          <Input
+            label={t("form.email")}
+            placeholder={t("form.placeholders.email")}
+          />
+          <Input
+            label={t("form.subject")}
+            placeholder={t("form.placeholders.subject")}
+          />
         </div>
 
         <div className="flex flex-wrap gap-8 w-full">
-          <div className="input-control grow">
-            <label>{t("form.firstName")}</label>
-            <input placeholder={t("form.placeholders.firstName")} />
-          </div>
-          <div className="input-control grow">
-            <label>{t("form.lastName")}</label>
-            <input placeholder={t("form.placeholders.lastName")} />
-          </div>
+          <Input
+            label={t("form.firstName")}
+            placeholder={t("form.placeholders.firstName")}
+          />
+          <Input
+            label={t("form.lastName")}
+            placeholder={t("form.placeholders.lastName")}
+          />
         </div>
 
         <div className="input-control grow">
