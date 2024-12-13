@@ -7,11 +7,19 @@ export const button = tv({
 export const typography = tv({
   base: "text-gray-500 font-normal",
   variants: {
+    align: {
+      center: "text-center",
+      left: "text-left",
+      right: "text-right",
+    },
     weight: {
       paragraph: "font-light",
       thin: "font-thin",
+      bold: "font-bold",
+      semi: "font-semibold",
     },
     color: {
+      black: "!text-black",
       primary: "!text-gray-500",
       inverse: "!text-white",
       brand: "!text-primary",
@@ -23,9 +31,11 @@ export const typography = tv({
     },
 
     size: {
-      small: "text-sm",
+      small: "!text-sm",
       medium: "text-md",
       large: "text-lg",
+      xlarge: "text-xl",
+      xxlarge: "text-2xl",
     },
 
     font: {

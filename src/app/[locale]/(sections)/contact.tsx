@@ -1,40 +1,46 @@
 import { button, typography } from "@/ui/variants";
 import { Clock, Cross, Info, Mail, MapPin } from "lucide-react";
 import { twMerge } from "tailwind-merge";
+import { getTranslations } from "next-intl/server";
 
-const info = [
-  { title: "Email", Icon: Mail, children: "naturainfo@gmail.com" },
-  { title: "Address", Icon: MapPin, children: "Pale, Pribanjska 55" },
-  {
-    title: "Ambulance",
-    Icon: Cross,
-    children: (
-      <>
-        <span>+387 57 223 945</span> <span>+387 65 213 666</span>
-      </>
-    ),
-  },
-  {
-    title: "Info",
-    Icon: Info,
-    children: (
-      <>
-        <span>+387 57 223 945</span> <span>+387 65 213 666</span>
-      </>
-    ),
-  },
-  {
-    title: "Work hours",
-    Icon: Clock,
-    children: (
-      <>
-        <span>Mon-sun</span> <span>08:00-17:00</span>
-      </>
-    ),
-  },
-];
+const translateCards = async () => {
+  const t = await getTranslations("sections.contact");
+  return [
+    { title: t("email"), Icon: Mail, children: "naturainfo@gmail.com" },
+    { title: t("address"), Icon: MapPin, children: "Pale, Pribanjska 55" },
+    {
+      title: t("ambulance"),
+      Icon: Cross,
+      children: (
+        <>
+          <span>+387 57 223 945</span> <span>+387 65 213 666</span>
+        </>
+      ),
+    },
+    {
+      title: t("info"),
+      Icon: Info,
+      children: (
+        <>
+          <span>+387 57 223 945</span> <span>+387 65 213 666</span>
+        </>
+      ),
+    },
+    {
+      title: t("hours"),
+      Icon: Clock,
+      children: (
+        <>
+          <span>{t("monSun")}</span> <span>08:00-17:00</span>
+        </>
+      ),
+    },
+  ];
+};
 
-export default function Contact() {
+export default async function Contact() {
+  const t = await getTranslations("sections.contact");
+  const info = await translateCards();
   return (
     <section
       id="contact"
@@ -63,38 +69,38 @@ export default function Contact() {
       </div>
 
       <form className="card *:mb-8 w-full max-w-prose  bg-white self-start">
-        <h2 className="title">Contact</h2>
+        <h2 className="title">{t("title")}</h2>
 
         <div className="flex flex-wrap gap-8 w-full">
           <div className="input-control grow">
-            <label>Enter email</label>
-            <input placeholder="naturainfo@gmail.com" />
+            <label>{t("form.email")}</label>
+            <input placeholder={t("form.placeholders.email")} />
           </div>
           <div className="input-control grow">
-            <label>Subject</label>
-            <input placeholder="naturainfo@gmail.com" />
+            <label>{t("form.subject")}</label>
+            <input placeholder={t("form.placeholders.subject")} />
           </div>
         </div>
 
         <div className="flex flex-wrap gap-8 w-full">
           <div className="input-control grow">
-            <label>First name</label>
-            <input placeholder="John" />
+            <label>{t("form.firstName")}</label>
+            <input placeholder={t("form.placeholders.firstName")} />
           </div>
           <div className="input-control grow">
-            <label>Last name</label>
-            <input placeholder="Doe" />
+            <label>{t("form.lastName")}</label>
+            <input placeholder={t("form.placeholders.lastName")} />
           </div>
         </div>
 
         <div className="input-control grow">
-          <label>Message</label>
-          <textarea placeholder="hello..." />
+          <label>{t("form.message")}</label>
+          <textarea placeholder={t("form.placeholders.message")} />
         </div>
 
         <button className={twMerge(button(), "ml-auto")}>
           <Mail />
-          Send
+          {t("form.button")}
         </button>
       </form>
     </section>

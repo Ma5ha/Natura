@@ -1,0 +1,54 @@
+{
+  "lang": {
+    "sr": "Serbian",
+    "en": "English"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact",
+    "local": "Local"
+  },
+  "sections": {
+    "services": {
+      "title": "Services",
+      "activity": "Activity",
+      "employed": "Employed",
+      "beds": "Beds",
+      "staff": "Staff",
+      "doctors": "Doctors",
+      "diet": "Diet",
+      "desc": {
+        "services": "Natura offers a comprehensive care program for the elderly, providing adapted medical and personal services. Our highly qualified nurses and caregivers are always available, ensuring personal care and assistance to each resident.<br></br><br></br> The meals provided are fully adapted to the specific dietary and health needs of the elderly. Experienced doctors, specialized in cardiology and internal medicine, take care of the residents' health, while a modern ambulance service is available for emergency transport and medical appointments upon request.<br></br><br></br> This holistic approach ensures a safe, comfortable and supportive environment for all users.",
+        "staff": "Our highly qualified nurses and caregivers are always available, ensuring personal care and assistance to each resident.",
+        "doctors": "We take care of the residents`&lsquo; health, while a modern ambulance service is available for emergency transport and medical appointments upon request.",
+        "diet": "The meals provided are fully adapted to the specific dietary and health needs of the elderly."
+      }
+    },
+    "contact": {
+      "title": "Contact",
+      "email": "Email",
+      "address": "Address",
+      "ambulance": "Ambulance",
+      "info": "Info",
+      "hours": "Work hours",
+      "monSun": "Mon - Sun",
+      "form": {
+        "firstName": "First name",
+        "lastName": "Last name",
+        "email": "Email",
+        "subject": "Phone",
+        "message": "Message",
+        "button": "Send",
+        "placeholders": {
+          "firstName": "Please enter your name",
+          "lastName": "Please enter your last name",
+          "email": "Please enter your email",
+          "subject": "Please enter subject",
+          "message": "Please enter your message"
+        }
+      }
+    }
+  }
+}

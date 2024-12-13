@@ -1,0 +1,53 @@
+{
+  "lang": {
+    "sr": "Srpski",
+    "en": "Engleski"
+  },
+  "nav": {
+    "home": "Početna",
+    "about": "O nama",
+    "services": "Usluge",
+    "contact": "Kontakt"
+  },
+  "sections": {
+    "services": {
+      "title": "Usluge",
+      "activity": "Aktivnosti",
+      "employed": "Zaposlenih",
+      "beds": "Kreveta",
+      "staff": "Osoblje",
+      "doctors": "Ljekari",
+      "diet": "Ishrana",
+      "desc": {
+        "services": "„Natura“ nudi sveobuhvatan program njege za starije osobe, pružajući prilagođene medicinske i lične usluge. Naše visokokvalifikovane medicinske sestre i njegovatelji su uvijek dostupni, osiguravajući ličnu njegu i podršku svakom korisniku. <br></br><br></br> Obroci su u potpunosti prilagođeni specifičnim dijetetskim i zdravstvenim potrebama starijih osoba. Iskusni ljekari, specijalizirani za kardiologiju i internu medicinu, brinu o zdravlju korisnika, dok je savremena ambulantna služba dostupna za hitan transport i medicinske preglede na zahtjev.<br></br> <br></br> Ovakav holistički pristup osigurava sigurno, udobno i podržavajuće okruženje za sve korisnike.",
+        "staff": " Naše visokokvalifikovane medicinske sestre i njegovateljice, kao i ostalo osoblje je uvijek tu za naše korisnike",
+        "doctors": "Mi se brinemo o zdravlju naših korisnika, dok se moderna ambulanta za hitne prevoze i lije ne konsultacije zahtijevaju. Na e visokokvalifikovane medicinske sestre i njegovateljice, kao i ostalo osoblje su uvijek tu za na‘sinih korisnika, a moderna hitna pomo  je dostupna za hitne slu ajeve i lije ne konsultacije po zahtjevu.",
+        "diet": "Ishrana se u potpunosti prilagođena zivotnoj dobi korisnika i može se prilagođavati u odnosu na zdravstveno stanje."
+      }
+    },
+    "contact": {
+      "title": "Kontakt",
+      "email": "Email",
+      "address": "Adresa",
+      "ambulance": "Hitna pomoć",
+      "info": "Informacije",
+      "hours": "Radno vrijeme",
+      "monSun": "Pon - Ned",
+      "form": {
+        "firstName": "Ime",
+        "lastName": "Prezime",
+        "email": "Email",
+        "subject": "Tema",
+        "message": "Poruka",
+        "button": "Pošalji",
+        "placeholders": {
+          "firstName": "Unesite vaše ime",
+          "lastName": "Unesite vaše prezime",
+          "email": "Unesite vaš email",
+          "subject": "Unesite temu poruke",
+          "message": "Unesite vašu poruku"
+        }
+      }
+    }
+  }
+}

@@ -1,55 +1,59 @@
 import { typography } from "@/ui/variants";
 import { Apple, Bed, Stethoscope, Users, Volleyball } from "lucide-react";
 import { twMerge } from "tailwind-merge";
+import { getTranslations } from "next-intl/server";
 
-const leftSideCards = [
-  { label: "Activity", data: 35, Icon: Volleyball },
-  { label: "Employed", data: 45, Icon: Users },
-  { label: "Beds", data: 70, Icon: Bed },
-];
+type Card = {
+  label: string;
+  data?: number;
+  desc?: string;
+  Icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+};
 
-const rightSideCards = [
-  {
-    label: "Staff",
-    desc: "Naše visokokvalifikovane medicinske sestre i njegovateljice, kao i ostalo osoblje je uvijek tu za naše korisnike",
-    Icon: Users,
-  },
-  {
-    label: "Doctors",
-    desc: "O našim korisnicima brinu priznati doktori iz oblasti kardiologije, interne medicine…",
-    Icon: Stethoscope,
-  },
-  {
-    label: "Diet",
-    desc: "Ishrana je u potpunosti prilagođena životnoj dobi korisnika i može se prilagođavati u odnosu na zdravstveno stanje",
-    Icon: Apple,
-  },
-];
+const translateCards = async () => {
+  const t = await getTranslations("sections.services");
 
-export default function Services() {
+  const leftSideCards = [
+    { label: t("activity"), data: 35, Icon: Volleyball },
+    { label: t("employed"), data: 45, Icon: Users },
+    { label: t("beds"), data: 70, Icon: Bed },
+  ];
+
+  const rightSideCards = [
+    {
+      label: t("staff"),
+      desc: t("desc.staff"),
+      Icon: Users,
+    },
+    {
+      label: t("doctors"),
+      desc: t("desc.doctors"),
+      Icon: Stethoscope,
+    },
+    {
+      label: t("diet"),
+      desc: t("desc.diet"),
+      Icon: Apple,
+    },
+  ];
+
+  return [leftSideCards, rightSideCards] as [Card[], Card[]];
+};
+
+export default async function Services() {
+  const t = await getTranslations("sections.services");
+  const [leftSideCards, rightSideCards] = await translateCards();
   return (
     <section
       id="services"
       className="page snap-start flex flex-wrap xl:flex-nowrap gap-10 justify-center items-top relative"
     >
       <div className="max-w-prose bg-white px-5 py-20 h-full card backdrop-blur max-h-[800px]">
-        <h1 className="title mb-10">Services</h1>
+        <h1 className="title mb-10">{t("title")}</h1>
         <p className={twMerge("text-justify ", typography())}>
-          `&quot;` Natura `&quot;` offers a comprehensive care program for the
-          elderly, providing tailored medical and personal services. Our highly
-          qualified nurses and caregivers are always available, ensuring
-          personal care and assistance to each resident.
-          <br />
-          <br />
-          The meals provided are fully adapted to the specific dietary and
-          health needs of the elderly. Experienced doctors, specializing in
-          cardiology and internal medicine, take care of the residents`&lsquo;`
-          health, while a modern ambulance service is available for emergency
-          transport and medical appointments upon request.
-          <br />
-          <br />
-          This holistic approach ensures a safe, comfortable, and supportive
-          environment for all residents.
+          {t.rich("desc.services", {
+            br: () => <br />,
+          })}
         </p>
       </div>
       <div className="flex max-w-prose flex-wrap *:grow order-first *:w-[20ch] sm:flex-row sm:flex-wrap gap-2 items-start xl:h-fit xl:flex-col">
