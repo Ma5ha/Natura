@@ -10,6 +10,10 @@
     "contact": "Contact",
     "local": "Local"
   },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "and their answers"
+  },
   "sections": {
     "services": {
       "title": "Services",

@@ -1,4 +1,4 @@
-import { Link } from "@/i18n/routing";
+import { Link, usePathname } from "@/i18n/routing";
 import { typography } from "@/ui/variants";
 import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
 import { useLocale, useTranslations } from "next-intl";
@@ -75,6 +75,7 @@ const serbFlag = (
 export default function LocalSwitcher() {
   const local = useLocale();
   const t = useTranslations();
+  const path = usePathname();
 
   return (
     <div className="relative">
@@ -100,7 +101,7 @@ export default function LocalSwitcher() {
           <MenuItem>
             <Link
               locale="sr"
-              href={"/"}
+              href={path}
               className={twMerge(
                 typography({ color: "inverse", weight: "semi" }),
                 "block p-2"
@@ -112,7 +113,7 @@ export default function LocalSwitcher() {
           <MenuItem>
             <Link
               locale="en"
-              href={"/"}
+              href={path}
               className={twMerge(
                 typography({ color: "inverse", weight: "semi" }),
                 "block p-2"

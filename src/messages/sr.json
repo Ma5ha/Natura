@@ -9,6 +9,10 @@
     "services": "Usluge",
     "contact": "Kontakt"
   },
+  "faq": {
+    "title": "Učestala pitanja",
+    "subtitle": "I njihovi odgovori"
+  },
   "sections": {
     "services": {
       "title": "Usluge",
