@@ -22,7 +22,7 @@ export default function HamburgerMenu({
   return (
     <>
       <div className="relative menu size-[24px] flex justify-center">
-        <div className="w-[24px] h-[24px] relative menu">
+        <div className="w-[24px] h-[24px] relative menu lg:hidden">
           <button className="w-[24px] h-[24px]" onClick={toggle}>
             <Menu className="w-[24px] h-[24px] lg:stroke-green-700" />
           </button>
