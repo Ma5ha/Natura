@@ -32,14 +32,14 @@ const SelectComponent: FC<Props> & { Option: typeof Option } = ({
   children,
 }) => {
   return (
-    <div className="input-control">
+    <div className="input-control w-full">
       <label>{label}</label>
       <Select.Root {...root}>
         <Select.Trigger
           {...trigger}
           className={twMerge(
             typography({ color: "black", align: "left" }),
-            "rounded-md px-3 py-4 bg-gray-50 outline-primary min-h-[56px] data-[placeholder]:!text-gray-500 data-[placeholder]:!font-[400] !font-[400]"
+            "rounded-md px-3 py-4 bg-gray-50 outline-primary min-h-[56px] data-[placeholder]:!text-gray-500 data-[placeholder]:!font-[400] !font-[400] focus:ring-2 ring-primary data-[state=open]:ring-2 "
           )}
         >
           <Select.Value placeholder={placeholder} {...value} />
