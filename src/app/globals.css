@@ -60,6 +60,10 @@
     height: 200px;
   }
 
+  input::placeholder, textarea::placeholder {
+    @apply !text-gray-500 !font-normal
+  }
+
   label {
     @apply font-medium;
   }

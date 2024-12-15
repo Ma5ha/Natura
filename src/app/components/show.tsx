@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-const Show: FC<{ when?: boolean; children: React.ReactNode }> = ({
+const Show: FC<{ when?: boolean; children?: React.ReactNode }> = ({
   when,
   children,
 }) => when && children;
