@@ -3,6 +3,7 @@ import About from "./(sections)/about";
 import Services from "./services";
 import Contact from "./(sections)/contact";
 import Map from "./(sections)/map";
+import Testimonial from "../components/testimonials";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Services />
       <Contact />
       <Map />
+      <Testimonial />
     </>
   );
 }
