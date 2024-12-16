@@ -1,4 +1,5 @@
 import { typography } from "@/ui/variants";
+import { ChevronRight } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import { FC } from "react";
 import { twMerge } from "tailwind-merge";
@@ -40,18 +41,19 @@ const Faq: FC = async () => {
       <ul className="max-w-[70ch] mx-auto mt-10">
         {FaqQuestions.map(({ question, answer }) => (
           <li key={question} className="mb-2">
-            <details className="border p-2 rounded-lg cursor-pointer bg-white/50">
+            <details className="border p-2 rounded-lg cursor-pointer bg-white/50 [&[open]>*>svg]:rotate-90">
               <summary
                 className={twMerge(
-                  "list-none",
+                  "list-none flex",
                   typography({ weight: "semi", color: "black" })
                 )}
               >
                 {question}
+                <ChevronRight width={16} className="ml-auto stroke-gray-600" />
               </summary>
               <p
                 className={twMerge(
-                  typography({ color: "primary", size: "large" }),
+                  typography({ color: "primary", size: "small" }),
                   "mt-2"
                 )}
               >
