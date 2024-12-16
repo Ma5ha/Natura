@@ -15,7 +15,7 @@ const links = [
   { label: "Faq", href: "/faq" },
   { label: "Application", href: "/application" },
 ];
-const ids = ["hero", "about", "services", "contact"];
+
 const activeClass = "text-primary border-b-primary h-full border-b-2 ";
 
 export default function Nav() {
