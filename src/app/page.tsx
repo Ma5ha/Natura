@@ -1,17 +1,5 @@
-import Hero from "./hero";
-import About from "./about";
-import Services from "./services";
-import Contact from "./contact";
-import Map from "./map";
+import { redirect } from "next/navigation";
 
-export default function Home() {
-  return (
-    <>
-      <Hero />
-      <About />
-      <Services />
-      <Contact />
-      <Map />
-    </>
-  );
+export default function RootPage() {
+  return redirect("/sr");
 }
