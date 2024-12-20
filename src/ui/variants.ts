@@ -2,6 +2,9 @@ import { tv } from "tailwind-variants";
 
 export const button = tv({
   base: "font-bold text-gray-500 py-3 px-4 text-white rounded bg-primary flex gap-2",
+  variants: {
+    sematic: { secondary: "bg-transparent text-primary border border-primary" },
+  },
 });
 
 export const typography = tv({
@@ -28,6 +31,8 @@ export const typography = tv({
     semantic: {
       title: "font-bold !text-black",
       bigTitle: "font-bold text-3xl",
+      largeTitle: "font-bold text-3xl",
+      largeTitleSub: " text-2xl !text-gray-500",
     },
 
     size: {
