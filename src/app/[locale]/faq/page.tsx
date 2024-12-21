@@ -30,39 +30,48 @@ const FaqQuestions = [
 const Faq: FC = async () => {
   const t = await getTranslations("faq");
   return (
-    <section className="snap-start  page">
-      <h2 className={typography({ semantic: "title", size: "xxlarge" })}>
-        {t("title")}{" "}
-        <span className={typography({ size: "large", color: "primary" })}>
-          ({t("subtitle")})
-        </span>
-      </h2>
+    <section className="snap-start page">
+      <div className="max-w-[70ch] mx-auto">
+        <h2
+          className={twMerge(
+            typography({ semantic: "title", size: "xxlarge" })
+          )}
+        >
+          {t("title")}{" "}
+          <span className={typography({ size: "large", color: "primary" })}>
+            ({t("subtitle")})
+          </span>
+        </h2>
 
-      <ul className="max-w-[70ch] mx-auto mt-10">
-        {FaqQuestions.map(({ question, answer }) => (
-          <li key={question} className="mb-2">
-            <details className="border p-2 rounded-lg cursor-pointer bg-white/50 [&[open]>*>svg]:rotate-90">
-              <summary
-                className={twMerge(
-                  "list-none flex",
-                  typography({ weight: "semi", color: "black" })
-                )}
-              >
-                {question}
-                <ChevronRight width={16} className="ml-auto stroke-gray-600" />
-              </summary>
-              <p
-                className={twMerge(
-                  typography({ color: "primary", size: "small" }),
-                  "mt-2"
-                )}
-              >
-                {answer}
-              </p>
-            </details>
-          </li>
-        ))}
-      </ul>
+        <ul className="mt-10">
+          {FaqQuestions.map(({ question, answer }) => (
+            <li key={question} className="mb-2">
+              <details className=" p-2 rounded-lg cursor-pointer bg-white/50 [&[open]>*>svg]:rotate-90">
+                <summary
+                  className={twMerge(
+                    "list-none flex",
+                    typography({ weight: "semi", color: "black" })
+                  )}
+                >
+                  {question}
+                  <ChevronRight
+                    width={16}
+                    className="ml-auto stroke-gray-600"
+                  />
+                </summary>
+                <p
+                  className={twMerge(
+                    typography({ color: "primary", size: "small" }),
+                    "mt-2"
+                  )}
+                >
+                  {answer}
+                </p>
+              </details>
+            </li>
+          ))}
+        </ul>
+      </div>
     </section>
   );
 };
