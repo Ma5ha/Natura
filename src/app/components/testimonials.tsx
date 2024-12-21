@@ -36,12 +36,12 @@ const testimonials = [
 ];
 const Testimonial = () => {
   return (
-    <div className="page snap-start !min-h-[400px] flex justify-center items-center flex-wrap bg-primary-900">
+    <div className="snap-start py-10 w-full flex justify-center items-center flex-wrap bg-primary-900">
       <div className="flex gap-2 flex-wrap justify-center">
         {testimonials
           .concat(additionalTestimonials)
           .map(({ content, author, job, title }, i) => (
-            <div className={"card bg-white max-w-[50ch] flex flex-col  gap-2"}>
+            <div className={"card bg-white max-w-[40ch] flex flex-col  gap-2"}>
               <h4
                 className={typography({
                   color: "black",

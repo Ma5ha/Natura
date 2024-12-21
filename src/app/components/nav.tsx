@@ -12,6 +12,7 @@ import Show from "../components/show";
 import { Link } from "@/i18n/routing";
 const links = [
   { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
   { label: "Faq", href: "/faq" },
   { label: "Application", href: "/application" },
 ];

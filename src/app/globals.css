@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 @layer base {
-  main {
-    scrollbar-color: #018979 rgb(213, 213, 213);
-  }
+
+
+
   .icon {
     opacity: 1;
   }
