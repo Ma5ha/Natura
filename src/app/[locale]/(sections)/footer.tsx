@@ -12,7 +12,8 @@ export default function Footer() {
       <div className="px-20 flex gap-10 ">
         <span
           className={twMerge(
-            typography({ semantic: "bigTitle", color: "brand", font: "serif" })
+            typography({ semantic: "bigTitle", color: "brand", font: "serif" }),
+            "first-letter:text-gray-200"
           )}
         >
           Natura
