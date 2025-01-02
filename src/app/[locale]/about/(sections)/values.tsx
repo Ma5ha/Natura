@@ -40,7 +40,16 @@ const values = [
 
 export default function Values() {
   return (
-    <div className="p-5 snap snap-center">
+    <div className="p-5 snap snap-center space-y-5">
+      <h2
+        className={twMerge(
+          "m-auto w-fit",
+          typography({ semantic: "largeTitle", color: "black" })
+        )}
+      >
+        We will give{" "}
+        <span className="bg-roof bg-no-repeat bg-top bg-contain bg-">you</span>
+      </h2>
       <ul className="m-auto grid grid-cols-1 sm:grid-cols-2 gap-5 max-w-prose">
         {values.map(({ title, description, icon }) => (
           <li

@@ -10,7 +10,15 @@ const image = "max-w-[40ch] m-auto";
 export default function Mission() {
   return (
     <section className="page snap-center bg-white/50 w-full">
-      <div className="m-auto w-fit space-y-20  bg-white/50 p-5 rounded-lg">
+      <div className="m-auto *:m-auto space-y-20  bg-white/50 p-5 rounded-lg">
+        <h2
+          className={twMerge(
+            "m-auto w-fit",
+            typography({ semantic: "largeTitle", color: "black" })
+          )}
+        >
+          We offer best care to elders{" "}
+        </h2>
         <div className={twMerge(pWarper, "")}>
           <Image
             src={about1.src}

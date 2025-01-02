@@ -13,6 +13,9 @@ const config: Config = {
         serif: ['"EB Garamond"', "serif"],
         sans: ["Inter", "sans"],
       },
+      backgroundImage: {
+        roof: "url(/roof.svg)",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

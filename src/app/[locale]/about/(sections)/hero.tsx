@@ -3,8 +3,8 @@ import { twMerge } from "tailwind-merge";
 
 export default function Hero() {
   return (
-    <section className="max-w-prose page snap-center">
-      <div className="max-w-prose">
+    <section className="w-full p-5 snap-center bg-gray">
+      <div className="max-w-prose m-auto">
         <h2 className={typography({ semantic: "largeTitle", color: "black" })}>
           Our story
         </h2>
@@ -16,12 +16,6 @@ export default function Hero() {
           trusted place where residents and their families find comfort, knowing
           their loved ones are in caring hands.
         </p>
-        <div className="flex gap-2">
-          <button className={button()}>Contact us</button>
-          <button className={button({ sematic: "secondary" })}>
-            Read more
-          </button>
-        </div>
       </div>
     </section>
   );
