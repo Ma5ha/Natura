@@ -1,9 +1,11 @@
 import { button, typography } from "@/ui/variants";
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import { twMerge } from "tailwind-merge";
 import hero from "@public/hero.svg";
+import { Link } from "@/i18n/routing";
 
 export default async function Hero() {
+  const local = await getLocale();
   // const t = await getTranslations("sections.hero");
   return (
     <section
@@ -35,8 +37,16 @@ export default async function Hero() {
           emotional well-being, and a sense of community
         </p>
         <div className="flex gap-2">
-          <button className={button()}>Contact us</button>
-          <button className={button({ sematic: "secondary" })}>About us</button>
+          <Link locale={local} href="/#contact" className={button()}>
+            Contact us
+          </Link>
+          <Link
+            locale={local}
+            href="/about"
+            className={button({ sematic: "secondary" })}
+          >
+            About us
+          </Link>
         </div>
       </div>
     </section>

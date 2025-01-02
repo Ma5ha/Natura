@@ -3,18 +3,27 @@ import { Clock, Cross, Info, Mail, MapPin } from "lucide-react";
 import { twMerge } from "tailwind-merge";
 import { getTranslations } from "next-intl/server";
 import Input from "@/app/components/input";
+import {
+  ADDRESS,
+  AMBULANCE_PHONE,
+  AMBULANCE_PHONE_ALT,
+  EMAIL,
+  INFO_PHONE,
+  INFO_PHONE_ALT,
+  WORK_HOURS,
+} from "@/constants/info";
 
 const translateCards = async () => {
   const t = await getTranslations("sections.contact");
   return [
-    { title: t("email"), Icon: Mail, children: "naturainfo@gmail.com" },
-    { title: t("address"), Icon: MapPin, children: "Pale, Pribanjska 55" },
+    { title: t("email"), Icon: Mail, children: EMAIL },
+    { title: t("address"), Icon: MapPin, children: ADDRESS },
     {
       title: t("ambulance"),
       Icon: Cross,
       children: (
         <>
-          <span>+387 57 223 945</span> <span>+387 65 213 666</span>
+          <span>{AMBULANCE_PHONE}</span> <span>{AMBULANCE_PHONE_ALT}</span>
         </>
       ),
     },
@@ -23,7 +32,7 @@ const translateCards = async () => {
       Icon: Info,
       children: (
         <>
-          <span>+387 57 223 945</span> <span>+387 65 213 666</span>
+          <span>{INFO_PHONE}</span> <span>{INFO_PHONE_ALT}</span>
         </>
       ),
     },
@@ -32,7 +41,7 @@ const translateCards = async () => {
       Icon: Clock,
       children: (
         <>
-          <span>{t("monSun")}</span> <span>08:00-17:00</span>
+          <span>{t("monSun")}</span> <span>{WORK_HOURS}</span>
         </>
       ),
     },
