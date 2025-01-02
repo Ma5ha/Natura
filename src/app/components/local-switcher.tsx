@@ -96,16 +96,13 @@ export default function LocalSwitcher() {
           unmount
           transition={false}
           anchor="bottom end"
-          className="w-[20ch] [&_svg]:size-[18px] *:flex *:gap-1 *:items-center z-50  rounded-xl border border-white/5 bg-gray-900 p-2 focus:outline-none  hover:*:bg-gray-700"
+          className="w-[20ch] [&_svg]:size-[18px] *:flex *:gap-1 *:items-center z-50  rounded-xl border border-white/5 bg-white p-2 focus:outline-none  hover:*:bg-gray-700"
         >
           <MenuItem>
             <Link
               locale="sr"
               href={path}
-              className={twMerge(
-                typography({ color: "inverse", weight: "semi" }),
-                "block p-2"
-              )}
+              className={twMerge(typography({ weight: "semi" }), "block p-2")}
             >
               <span>{serbFlag}</span> <span>{t("lang.sr")}</span>
             </Link>
@@ -114,10 +111,7 @@ export default function LocalSwitcher() {
             <Link
               locale="en"
               href={path}
-              className={twMerge(
-                typography({ color: "inverse", weight: "semi" }),
-                "block p-2"
-              )}
+              className={twMerge(typography({ weight: "semi" }), "block p-2")}
             >
               <span>{englandFlag}</span> <span>{t("lang.en")} </span>
             </Link>

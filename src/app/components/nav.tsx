@@ -9,14 +9,8 @@ import LocalSwitcher from "../components/local-switcher";
 import HamburgerMenu from "../components/hamburger-menu";
 import useMedia from "../hooks/media";
 import Show from "../components/show";
-import { Link } from "@/i18n/routing";
-const links = [
-  { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
-  { label: "Services", href: "/services" },
-  { label: "Faq", href: "/faq" },
-  { label: "Application", href: "/application" },
-];
+import { Link, usePathname } from "@/i18n/routing";
+import { navigation } from "@constants/nav";
 
 const activeClass = "text-primary border-b-primary h-full border-b-2 ";
 
@@ -25,6 +19,7 @@ export default function Nav() {
     `(min-width:${resolveConfig(tailwindConfig).theme.screens.lg})`
   );
 
+  const pathname = usePathname();
   const locale = useLocale();
 
   return (
@@ -41,12 +36,12 @@ export default function Nav() {
         </Show>
 
         <div className="h-full box-content hidden lg:block mr-5">
-          {links.map(({ label, href }, i) => (
+          {navigation.map(({ label, href }) => (
             <Link
               key={label}
               className={twJoin(
                 "ml-5 h-full font-semibold pb-5 tracking-tight",
-                i === 0 && activeClass
+                href === pathname && activeClass
               )}
               href={href}
             >

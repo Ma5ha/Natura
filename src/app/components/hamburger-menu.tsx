@@ -3,22 +3,19 @@
 import { NaturaLogo } from "@/public/natura-logo";
 import { typography } from "@/ui/variants";
 import { Menu, X } from "lucide-react";
-import Link from "next/link";
 import { twJoin, twMerge } from "tailwind-merge";
 import useToggle from "../hooks/toggle";
+import { navigation } from "@/constants/nav";
+import { Link, usePathname } from "@/i18n/routing";
+import { useLocale } from "next-intl";
 
-const links = ["Home", "About", "Services", "Contact"];
-const ids = ["hero", "about", "services", "contact"];
 const resolveExitEnterClass = (isOpen: boolean) =>
   isOpen ? "enter-icon" : "exit-icon";
 
-export default function HamburgerMenu({
-  activeIndex,
-}: {
-  activeIndex: number;
-}) {
+export default function HamburgerMenu() {
   const [isOpen, toggle] = useToggle(false);
-
+  const local = useLocale();
+  const pathname = usePathname();
   return (
     <>
       <div className="relative menu size-[24px] flex justify-center">
@@ -103,16 +100,18 @@ export default function HamburgerMenu({
                 size: "xxlarge",
               })
             )}
+            onClick={toggle}
           >
-            {links.map((label, i) => (
+            {navigation.map(({ label, href }, i) => (
               <li key={label}>
                 <Link
+                  locale={local}
                   key={label}
                   className={twJoin(
                     "ml-5  h-full pb-5 tracking-tighter  w-fit",
-                    i === activeIndex && "!text-white"
+                    href === pathname && "!text-white"
                   )}
-                  href={`#${ids[i]}`}
+                  href={href}
                 >
                   {label}
                 </Link>
