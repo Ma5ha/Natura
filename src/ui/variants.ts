@@ -3,7 +3,10 @@ import { tv } from "tailwind-variants";
 export const button = tv({
   base: "font-bold text-gray-500 py-3 px-4 text-white rounded bg-primary flex gap-2",
   variants: {
-    sematic: { secondary: "bg-transparent text-primary border border-primary" },
+    sematic: {
+      secondary: "bg-transparent text-primary border border-primary",
+      ghost: "text-primary bg-transparent underline w-fit",
+    },
   },
 });
 
