@@ -3,16 +3,111 @@
     "sr": "Serbian",
     "en": "English"
   },
+  "general": {
+    "contact_us": "Contact us",
+    "about_us": "About us"
+  },
   "nav": {
     "home": "Home",
     "about": "About",
     "services": "Services",
     "contact": "Contact",
-    "local": "Local"
+    "faq": "FAQ",
+    "application": "Application"
+  },
+  "home": {
+    "hero": {
+      "title": "Experience Peaceful, Personalized Senior Care",
+      "subtitle": "A Tranquil Setting, Tailored Just for You",
+      "desc": "At Natura, we provide exceptional elderly care in a calm, nature-filled environment, designed to support physical health, emotional well-being, and a sense of community"
+    },
+    "summary": {
+      "subtitle": "Personalized elderly care in a peaceful, nature-filled environment.",
+      "list": {
+        "1": {
+          "title": "Room options",
+          "text": "Single, double, and triple rooms, equipped with modern medical beds, panic buttons, private bathrooms, TV, and internet."
+        },
+        "2": {
+          "title": "Physiotherapy services",
+          "text": "Customized therapy programs to aid recovery from injuries, surgeries, and chronic conditions like Parkinson's, arthritis, and neurological disorders, improving mobility and independence."
+        },
+        "3": {
+          "title": "Intensive care services",
+          "text": "Specialized care with continuous monitoring of vital signs, ensuring timely medical interventions for patients with serious health conditions."
+        },
+        "4": {
+          "title": "Personalized care",
+          "text": "Our skilled professionals work together to address the physical, emotional, and social needs of every resident."
+        },
+        "5": {
+          "title": "Holistic approach to senior care",
+          "text": "We focus on creating a warm, community-centered environment where each resident feels valued and supported."
+        }
+      }
+    }
   },
   "faq": {
     "title": "Frequently Asked Questions",
-    "subtitle": "and their answers"
+    "subtitle": "and their answers",
+    "questions": {
+      "1": {
+        "question": "How much do services cost?",
+        "answer": "The price of our services is determined based on the psycho-physical condition of the user, for more information please contact us."
+      },
+      "2": {
+        "question": "Do you have single rooms?",
+        "answer": "The home offers accommodation in single, double and triple rooms, as well as multi-bed rooms (intensive care)."
+      },
+      "3": {
+        "question": "Do you accept completely immobile or demented users?",
+        "answer": "Services are adapted to users who suffer from dementia and other psycho-physical disabilities."
+      },
+      "4": {
+        "question": "How many meals are served per day?",
+        "answer": "Three meals and two snacks. Coffee and tea upon request."
+      },
+      "5": {
+        "question": "Can users leave the home for a shorter period?",
+        "answer": "Users can leave the home with the approval of their guardian (signatory of the contract)."
+      },
+      "6": {
+        "question": "When and at what time are visits allowed?",
+        "answer": "Visits are allowed every day, but with mandatory prior notice via phone number, to determine the time. You can schedule a visit at 066 213 666"
+      },
+      "7": {
+        "question": "Do you have a physiotherapist?",
+        "answer": "The home provides physiotherapy services, with two physiotherapists employed."
+      },
+      "8": {
+        "question": "What doctor services do you offer?",
+        "answer": "A cardiologist-internal medicine doctor is available in the home."
+      },
+      "9": {
+        "question": "Who purchases and delivers medication?",
+        "answer": "The purchase or delivery of medication is done with the consent of the relatives."
+      },
+      "10": {
+        "question": "Do you have social activities?",
+        "answer": "Social activities are held daily in spaces adapted to the needs of users."
+      },
+      "11": {
+        "question": "How many people are maximally accommodated in rooms?",
+        "answer": "Minimum 1, maximum 4 people per room."
+      },
+      "12": {
+        "question": "Do you provide medical transport services?",
+        "answer": "The home has a medical transport vehicle and provides medical transport services."
+      },
+      "13": {
+        "question": "Is medical transport included in the cost of home services?",
+        "answer": "The cost of medical transport is not included in the cost of home services. These services are charged separately."
+      },
+      "14": {
+        "question": "Does the home have a social worker?",
+        "answer": "Yes, a social worker is available in the home every working day, from 7am to 3pm."
+      }
+    }
   },
   "sections": {
     "services": {
@@ -29,29 +124,29 @@
         "doctors": "We take care of the residents`&lsquo; health, while a modern ambulance service is available for emergency transport and medical appointments upon request.",
         "diet": "The meals provided are fully adapted to the specific dietary and health needs of the elderly."
       }
-    },
-    "contact": {
-      "title": "Contact",
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "email": "Email",
+    "address": "Address",
+    "ambulance": "Ambulance",
+    "info": "Info",
+    "hours": "Work hours",
+    "monSun": "Mon - Sun",
+    "form": {
+      "firstName": "First name",
+      "lastName": "Last name",
       "email": "Email",
-      "address": "Address",
-      "ambulance": "Ambulance",
-      "info": "Info",
-      "hours": "Work hours",
-      "monSun": "Mon - Sun",
-      "form": {
-        "firstName": "First name",
-        "lastName": "Last name",
-        "email": "Email",
-        "subject": "Phone",
-        "message": "Message",
-        "button": "Send",
-        "placeholders": {
-          "firstName": "Please enter your name",
-          "lastName": "Please enter your last name",
-          "email": "Please enter your email",
-          "subject": "Please enter subject",
-          "message": "Please enter your message"
-        }
+      "subject": "Phone",
+      "message": "Message",
+      "button": "Send",
+      "placeholders": {
+        "firstName": "Please enter your name",
+        "lastName": "Please enter your last name",
+        "email": "Please enter your email",
+        "subject": "Please enter subject",
+        "message": "Please enter your message"
       }
     }
   }

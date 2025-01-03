@@ -14,7 +14,7 @@ import {
 } from "@/constants/info";
 
 const translateCards = async () => {
-  const t = await getTranslations("sections.contact");
+  const t = await getTranslations("contact");
   return [
     { title: t("email"), Icon: Mail, children: EMAIL },
     { title: t("address"), Icon: MapPin, children: ADDRESS },
@@ -49,7 +49,7 @@ const translateCards = async () => {
 };
 
 export default async function Contact() {
-  const t = await getTranslations("sections.contact");
+  const t = await getTranslations("contact");
   const info = await translateCards();
   return (
     <section

@@ -7,13 +7,14 @@ import { twJoin, twMerge } from "tailwind-merge";
 import useToggle from "../hooks/toggle";
 import { navigation } from "@/constants/nav";
 import { Link, usePathname } from "@/i18n/routing";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 const resolveExitEnterClass = (isOpen: boolean) =>
   isOpen ? "enter-icon" : "exit-icon";
 
 export default function HamburgerMenu() {
   const [isOpen, toggle] = useToggle(false);
+  const t = useTranslations("nav");
   const local = useLocale();
   const pathname = usePathname();
   return (
@@ -113,7 +114,7 @@ export default function HamburgerMenu() {
                   )}
                   href={href}
                 >
-                  {label}
+                  {t(label)}
                 </Link>
               </li>
             ))}

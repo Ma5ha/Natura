@@ -6,7 +6,7 @@ import { Link } from "@/i18n/routing";
 
 export default async function Hero() {
   const local = await getLocale();
-  // const t = await getTranslations("sections.hero");
+  const t = await getTranslations();
   return (
     <section
       id="hero"
@@ -21,31 +21,27 @@ export default async function Hero() {
               semantic: "largeTitle",
             })}
           >
-            Experience Peaceful, Personalized Senior Care
+            {t("home.hero.title")}
           </h1>
           <h2
             className={typography({
               semantic: "largeTitleSub",
             })}
           >
-            A Tranquil Setting, Tailored Just for You
+            {t("home.hero.subtitle")}
           </h2>
         </div>
-        <p className={twMerge(typography(), "mb-5")}>
-          At Natura, we provide exceptional elderly care in a calm,
-          nature-filled environment, designed to support physical health,
-          emotional well-being, and a sense of community
-        </p>
+        <p className={twMerge(typography(), "mb-5")}>{t("home.hero.desc")}</p>
         <div className="flex gap-2">
           <Link locale={local} href="/#contact" className={button()}>
-            Contact us
+            {t("general.contact_us")}
           </Link>
           <Link
             locale={local}
             href="/about"
             className={button({ sematic: "secondary" })}
           >
-            About us
+            {t("general.about_us")}
           </Link>
         </div>
       </div>

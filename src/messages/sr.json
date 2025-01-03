@@ -3,20 +3,110 @@
     "sr": "Srpski",
     "en": "Engleski"
   },
+  "general": {
+    "contact_us": "Kontaktirajte nas",
+    "about_us": "O nama"
+  },
   "nav": {
     "home": "Početna",
     "about": "O nama",
     "services": "Usluge",
-    "contact": "Kontakt"
-  },
-  "faq": {
-    "title": "Učestala pitanja",
-    "subtitle": "I njihovi odgovori"
+    "contact": "Kontakt",
+    "faq": "Učestala pitanja",
+    "application": "Zahtjev za smještenje"
   },
   "home": {
     "hero": {
-      "title": "Dom za starije lica",
-      "subtitle": "Natura je ustanova za starije lica, zasnovana na prilagođenim obrociima, koji se prilagođaju potrebi starijih osoba i njihovim zdravstvenim stanjima."
+      "title": "Iskusite mirnu, personalizovanu njegu za starije",
+      "subtitle": "Mirno okruženje, prilagođeno samo vama",
+      "desc": "U Naturi, pružamo izvanrednu njegu starijih osoba u mirnom, prirodnom okruženju, dizajniranom da podrži fizičko zdravlje, emocionalno blagostanje i osećaj zajednice"
+    },
+    "summary": {
+      "subtitle": "Personalizirana njega za starije u mirnom, prirodnom okruženju.",
+      "list": {
+        "1": {
+          "title": "Opcije soba",
+          "text": "Jednokrevetne, dvokrevetne i trokrevetne sobe, opremljene modernim medicinskim krevetima, panik-knopačima, privatnim kupatilima, TV-om i internetom."
+        },
+        "2": {
+          "title": "Fizioterapijske usluge",
+          "text": "Prilagođeni terapijski programi za oporavak od povreda, hirurških zahvata i hroničnih bolesti kao što su Parkinsonova bolest, artritis i neurološki poremećaji, poboljšavajući pokretljivost i nezavisnost."
+        },
+        "3": {
+          "title": "Intenzivne usluge njege",
+          "text": "Specijalizirana njega sa kontinuiranim nadzorom vitalnih znakova, osiguravajući pravovremene medicinske intervencije za pacijente s težim zdravstvenim stanjima."
+        },
+        "4": {
+          "title": "Personalizirana njega",
+          "text": "Naši stručni profesionalci rade zajedno kako bi se obratili fizičkim, emocionalnim i socijalnim potrebama svakog stanara."
+        },
+        "5": {
+          "title": "Holistički pristup njezi za starije",
+          "text": "Fokusiramo se na stvaranju toplog, zajednički orijentisanog okruženja u kojem se svaki stanar osjeća vrijednim i podržanim."
+        }
+      }
+    }
+  },
+  "faq": {
+    "title": "Učestala pitanja",
+    "subtitle": "I njihovi odgovori",
+    "questions": {
+      "1": {
+        "question": "Koliko koštaju usluge?",
+        "answer": "Cijena naših usluga se formira na osnovu psiho-fizičkog stanja korisnika, za više informacija kontaktirajte nas."
+      },
+      "2": {
+        "question": "Da li imamo jednokrevetne sobe?",
+        "answer": "Dom nudi smještaj u jednokrevetnim, dvokrevetnim i trokrevetnim sobama, kao i višekrevetnim sobama (intenzivna njega)."
+      },
+      "3": {
+        "question": "Da li primamo korisnike koji su skroz nepokretni ili dementni?",
+        "answer": "Usluge su prilagođene korisnicima koji boluju od demencije i drugih psihofizičkih tegoba."
+      },
+      "4": {
+        "question": "Koliko obroka se servira dnevno?",
+        "answer": "Tri obroka i dvije užine. Kafa i čaj po potrebi."
+      },
+      "5": {
+        "question": "Da li korisnici mogu izaći iz doma na kraći period?",
+        "answer": "Korisnici mogu izlaziti iz doma uz odobrenje njegovog staratelja (potpisnika ugovora)."
+      },
+      "6": {
+        "question": "Kada su i u koje vrijeme posjete?",
+        "answer": "Posjete su moguće svaki dan, ali uz obaveznu najavu putem telefonskog broja, kako bi se odredio termin. Možete se najaviti na 066 213 666"
+      },
+      "7": {
+        "question": "Imamo li fizioterapeuta?",
+        "answer": "Dom pruža usluge fizioterapeuta, u domu su zaposlena dva fizioterapeuta."
+      },
+      "8": {
+        "question": "Usluge doktora?",
+        "answer": "U domu ordinira internista-kardiolog."
+      },
+      "9": {
+        "question": "Ko nabavlja i podiže ljekove?",
+        "answer": "Nabavka ili podizanje ljekova se vrši uz dogovor sa srodnicima."
+      },
+      "10": {
+        "question": "Imamo li društveno-socijalne aktivnosti?",
+        "answer": "Društveno-socijalne aktivnosti su svakodnevno u prostorijama koje su prilagodjene korisnicima i njihovim potrebama."
+      },
+      "11": {
+        "question": "Koliko ljudi je maksimalno smješteno u sobama?",
+        "answer": "Minimalno 1, a maksimalno 4 osobe u sobi."
+      },
+      "12": {
+        "question": "Da li vršimo usluge sanitetskog prevoza?",
+        "answer": "Dom posjeduje sanitetsko vozilo i vrši usluge sanitetskog prevoza."
+      },
+      "13": {
+        "question": "Da li je usluga sanitetskog prevoza uključena u cijenu usluga doma?",
+        "answer": "Cijena sanitetskog prevoza nije uključena u cijenu usluga doma. Ove usluge se dodatno naplaćuju."
+      },
+      "14": {
+        "question": "Da li dom ima socijalnog radnika?",
+        "answer": "Da, u domu je socijalni radnik svaki radni dan, od 7 do 15 sati."
+      }
     },
     "sections": {
       "services": {
@@ -29,34 +119,34 @@
         "diet": "Ishrana",
         "desc": {
           "services": "„Natura“ nudi sveobuhvatan program njege za starije osobe, pružajući prilagođene medicinske i lične usluge. Naše visokokvalifikovane medicinske sestre i njegovatelji su uvijek dostupni, osiguravajući ličnu njegu i podršku svakom korisniku. <br></br><br></br> Obroci su u potpunosti prilagođeni specifičnim dijetetskim i zdravstvenim potrebama starijih osoba. Iskusni ljekari, specijalizirani za kardiologiju i internu medicinu, brinu o zdravlju korisnika, dok je savremena ambulantna služba dostupna za hitan transport i medicinske preglede na zahtjev.<br></br> <br></br> Ovakav holistički pristup osigurava sigurno, udobno i podržavajuće okruženje za sve korisnike.",
-          "staff": " Naše visokokvalifikovane medicinske sestre i njegovateljice, kao i ostalo osoblje je uvijek tu za naše korisnike",
-          "doctors": "Mi se brinemo o zdravlju naših korisnika, dok se moderna ambulanta za hitne prevoze i lije ne konsultacije zahtijevaju. Na e visokokvalifikovane medicinske sestre i njegovateljice, kao i ostalo osoblje su uvijek tu za na‘sinih korisnika, a moderna hitna pomo  je dostupna za hitne slu ajeve i lije ne konsultacije po zahtjevu.",
-          "diet": "Ishrana se u potpunosti prilagođena zivotnoj dobi korisnika i može se prilagođavati u odnosu na zdravstveno stanje."
+          "staff": "Naše visokokvalifikovane medicinske sestre i njegovateljice, kao i ostalo osoblje su uvijek tu za naše korisnike.",
+          "doctors": "Mi se brinemo o zdravlju naših korisnika, dok je moderna ambulanta za hitne prevoze i liječenje dostupna za hitne slučajeve i medicinske konsultacije po zahtjevu.",
+          "diet": "Ishrana se u potpunosti prilagođava životnoj dobi korisnika i može se prilagođavati u odnosu na zdravstveno stanje."
         }
-      },
-      "contact": {
-        "title": "Kontakt",
-        "email": "Email",
-        "address": "Adresa",
-        "ambulance": "Hitna pomoć",
-        "info": "Informacije",
-        "hours": "Radno vrijeme",
-        "monSun": "Pon - Ned",
-        "form": {
-          "firstName": "Ime",
-          "lastName": "Prezime",
-          "email": "Email",
-          "subject": "Tema",
-          "message": "Poruka",
-          "button": "Pošalji",
-          "placeholders": {
-            "firstName": "Unesite vaše ime",
-            "lastName": "Unesite vaše prezime",
-            "email": "Unesite vaš email",
-            "subject": "Unesite temu poruke",
-            "message": "Unesite vašu poruku"
-          }
-        }
+      }
+    }
+  },
+  "contact": {
+    "title": "Kontakt",
+    "email": "Email",
+    "address": "Adresa",
+    "ambulance": "Hitna pomoć",
+    "info": "Informacije",
+    "hours": "Radno vrijeme",
+    "monSun": "Pon - Ned",
+    "form": {
+      "firstName": "Ime",
+      "lastName": "Prezime",
+      "email": "Email",
+      "subject": "Tema",
+      "message": "Poruka",
+      "button": "Pošalji",
+      "placeholders": {
+        "firstName": "Unesite vaše ime",
+        "lastName": "Unesite vaše prezime",
+        "email": "Unesite vaš email",
+        "subject": "Unesite temu poruke",
+        "message": "Unesite vašu poruku"
       }
     }
   }

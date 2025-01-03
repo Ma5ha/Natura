@@ -4,7 +4,7 @@ import tailwindConfig from "../../../tailwind.config";
 import { NaturaLogo } from "@public/natura-logo";
 import { twJoin } from "tailwind-merge";
 
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import LocalSwitcher from "../components/local-switcher";
 import HamburgerMenu from "../components/hamburger-menu";
 import useMedia from "../hooks/media";
@@ -19,6 +19,7 @@ export default function Nav() {
     `(min-width:${resolveConfig(tailwindConfig).theme.screens.lg})`
   );
 
+  const t = useTranslations("nav");
   const pathname = usePathname();
   const locale = useLocale();
 
@@ -32,7 +33,7 @@ export default function Nav() {
       />
       <div className="flex gap-2 ">
         <Show when={isLg}>
-          <HamburgerMenu activeIndex={0} />
+          <HamburgerMenu />
         </Show>
 
         <div className="h-full box-content hidden lg:block mr-5">
@@ -45,7 +46,7 @@ export default function Nav() {
               )}
               href={href}
             >
-              {label}
+              {t(label)}
             </Link>
           ))}
         </div>
