@@ -10,7 +10,7 @@ export default async function Hero() {
   return (
     <section
       id="hero"
-      className="page snap-center bg-hero bg-cover sm:flex sm:items-center sm:justify-center"
+      className="page snap-center bg-hero bg-cover lg:flex sm:items-center sm:justify-center *:m-auto"
     >
       <img className="sm:order-1" src={hero.src} alt="hero" />
       <div className="max-w-[50ch]">

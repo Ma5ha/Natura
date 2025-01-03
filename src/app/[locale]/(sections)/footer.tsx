@@ -4,9 +4,15 @@ import Image from "next/image";
 import facebook from "@public/facebook-logo.png";
 import instagram from "@public/instagram-logo.png";
 import { twMerge } from "tailwind-merge";
+import { getLocale, getTranslations } from "next-intl/server";
+import { navigation } from "@/constants/nav";
+import { Link } from "@/i18n/routing";
+import { documents } from "@/constants/documentation";
 
-const links = ["Home", "About", "Services", "Contact"];
-export default function Footer() {
+export default async function Footer() {
+  const t = await getTranslations();
+  const locale = await getLocale();
+
   return (
     <footer className="bg-black snap-end  text-white pt-10 gap-20 flex flex-col justify-between">
       <div className="px-20 flex gap-10 ">
@@ -19,34 +25,63 @@ export default function Footer() {
           Natura
         </span>
 
-        <div>
-          <ul className="flex flex-col gap-2">
-            <span
+        <ul className="flex flex-col gap-2">
+          <span
+            className={twMerge(
+              typography({ semantic: "title", color: "inverse" }),
+              typography({ color: "inverse" }),
+              "leading-[45px]"
+            )}
+          >
+            {t("general.menu")}
+          </span>
+
+          {navigation.map(({ label, href }) => (
+            <li
+              key={label}
               className={twMerge(
-                typography({ semantic: "title", color: "inverse" }),
-                typography({ color: "inverse" }),
-                "leading-[45px]"
+                typography({
+                  weight: "paragraph",
+                  size: "small",
+                }),
+                "hover:!text-primary cursor-pointer"
               )}
             >
-              Menu
-            </span>
+              <Link locale={locale} href={href}>
+                {t(["nav", label].join("."))}
+              </Link>
+            </li>
+          ))}
+        </ul>
 
-            {links.map((link) => (
-              <li
-                key={link}
-                className={twMerge(
-                  typography({
-                    weight: "paragraph",
-                    size: "small",
-                  }),
-                  "hover:!text-primary cursor-pointer"
-                )}
-              >
-                {link}
-              </li>
-            ))}
-          </ul>
-        </div>
+        <ul className="flex flex-col gap-2">
+          <span
+            className={twMerge(
+              typography({ semantic: "title", color: "inverse" }),
+              typography({ color: "inverse" }),
+              "leading-[45px]"
+            )}
+          >
+            {t("general.documents")}
+          </span>
+
+          {documents.map(({ label, href }) => (
+            <li
+              key={label}
+              className={twMerge(
+                typography({
+                  weight: "paragraph",
+                  size: "small",
+                }),
+                "hover:!text-primary cursor-pointer"
+              )}
+            >
+              <a href={href} download>
+                {t(["documents", label].join("."))}
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
       <div className=" bg-gray-100 flex justify-between px-10 py-20">
         <div className="flex flex-col justify-center items-start h-full md:flex-row md:items-center">

@@ -10,7 +10,7 @@ export default async function Summary() {
   }));
 
   return (
-    <section className="page snap-center flex flex-col items-center justify-center bg-white/50">
+    <section className="page snap-center flex flex-col items-center justify-center bg-white/50 bg-care bg-fixed bg-contain bg-no-repeat bg-center">
       <div className="mb-5 bg-gray-100 px-5 py-20 rounded-lg">
         <h2
           className={typography({

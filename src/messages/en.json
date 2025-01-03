@@ -5,7 +5,13 @@
   },
   "general": {
     "contact_us": "Contact us",
-    "about_us": "About us"
+    "about_us": "About us",
+    "menu": "Menu",
+    "documents": "Documents"
+  },
+  "documents": {
+    "questionnaire": "User Questionnaire",
+    "protocol": "Admission Protocol"
   },
   "nav": {
     "home": "Home",

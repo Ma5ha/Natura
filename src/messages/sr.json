@@ -5,7 +5,13 @@
   },
   "general": {
     "contact_us": "Kontaktirajte nas",
-    "about_us": "O nama"
+    "about_us": "O nama",
+    "menu": "Meni",
+    "documents": "Dokumenti"
+  },
+  "documents": {
+    "questionnaire": "Lični list korisnika",
+    "protocol": "Protokol za prijem"
   },
   "nav": {
     "home": "Početna",
