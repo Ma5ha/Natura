@@ -1,6 +1,6 @@
 "use client";
 
-import { NaturaLogo } from "@/public/natura-logo";
+import { NaturaLogo } from "../../../public/natura-logo";
 import { typography } from "@/ui/variants";
 import { Menu, X } from "lucide-react";
 import { twJoin, twMerge } from "tailwind-merge";

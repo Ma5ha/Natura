@@ -1,7 +1,7 @@
 "use client";
 import resolveConfig from "tailwindcss/resolveConfig";
 import tailwindConfig from "../../../tailwind.config";
-import { NaturaLogo } from "@public/natura-logo";
+import { NaturaLogo } from "../../../public/natura-logo";
 import { twJoin } from "tailwind-merge";
 
 import { useLocale, useTranslations } from "next-intl";
