@@ -8,6 +8,7 @@ import { getLocale, getTranslations } from "next-intl/server";
 import { navigation } from "@/constants/nav";
 import { Link } from "@/i18n/routing";
 import { documents } from "@/constants/documentation";
+import { twChain } from "@/ui/tw-chain";
 
 export default async function Footer() {
   const t = await getTranslations();
@@ -15,11 +16,11 @@ export default async function Footer() {
 
   return (
     <footer className="bg-black snap-end  text-white pt-10 gap-20 flex flex-col justify-between">
-      <div className="px-20 flex gap-10 ">
+      <div className="px-20 sm:flex gap-10 space-y-10 sm:space-y-0">
         <span
           className={twMerge(
-            typography({ semantic: "bigTitle", color: "brand", font: "serif" }),
-            "first-letter:text-gray-200"
+            "first-letter:text-gray-200 h-fit inline-block",
+            typography({ semantic: "bigTitle", color: "brand", font: "serif" })
           )}
         >
           Natura
