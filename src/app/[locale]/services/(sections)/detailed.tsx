@@ -1,5 +1,6 @@
+import { Link } from "@/i18n/routing";
 import { button, typography } from "@/ui/variants";
-import Link from "next/link";
+
 import { twMerge } from "tailwind-merge";
 
 const sections = [
@@ -61,13 +62,17 @@ const sections = [
 export default function Detailed() {
   return (
     <section className="page snap-start bg-white/50 w-full">
-      <div className="max-w-prose mx-auto">
-        <ul className=" bg-gray-100 border-l-2 border-primary-600 py-5 px-5">
+      <div className="mx-auto">
+        <ul className=" bg-gray-100 border-l-2 border-primary-600 py-5 px-5 grid grid-cols-1 sm:grid-cols-2 gap-5">
           {sections.map((section) => (
             <li key={section.title} className="mb-10">
               <h2
                 className={twMerge(
-                  typography({ semantic: "largeTitle", color: "black" }),
+                  typography({
+                    semantic: "bigTitle",
+                    color: "black",
+                    size: "xlarge",
+                  }),
                   "mb-2"
                 )}
               >
@@ -75,7 +80,7 @@ export default function Detailed() {
               </h2>
               <h3
                 className={twMerge(
-                  typography({ semantic: "largeTitleSub" }),
+                  typography({ semantic: "largeTitleSub", size: "large" }),
                   "mb-5"
                 )}
               >
@@ -95,7 +100,7 @@ export default function Detailed() {
           ))}
         </ul>
         <Link
-          href="/services"
+          href="/#contact"
           className={twMerge(button({ sematic: "ghost" }))}
         >
           Contact us!

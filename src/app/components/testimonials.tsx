@@ -7,7 +7,6 @@ const additionalTestimonials = [
   {
     content: [
       "Ja sam u Domu za starija lica “Natura” bio 6 mjeseci. Tijekom svog boravka, imao sam svu potrebnu pomoć i skrb ustanove. Osoblje je vrlo ljubazno i stručno, a uprava je uvijek spremna da pomogne u svakoj situaciji.",
-      "Preporučujem Dom za starija lica “Natura” svakome tko treba takvu vrstu skrbi.",
     ],
     author: "Ivan Milić",
     title: 'Hvala "Natura"!',
@@ -19,7 +18,6 @@ const testimonials = [
   {
     content: [
       "O Domu za starija lica “Natura” mogu reći sve najbolje. Uprava profesionalno rukovodi radom doma uz, isto tako, stručno i ljubazno osoblje koje pruža vrhunsku njegu, što se jednako odnosi na ishranu i higijenu.",
-      "Zgrada je nova i stalno održavana, sa lijepom terasom, opremljena antidekubitalnim madracima, električnim krevetima, TV-om i pristupom internetu. Ukratko, moja majka izgleda i osjeća se bolje, znatno bolje nego prije smještaja u dom “Natura”. Sve pohvale!",
     ],
     author: "Neven Pecelj",
     job: "Posjetilac",
@@ -36,8 +34,8 @@ const testimonials = [
 ];
 const Testimonial = () => {
   return (
-    <div className="snap-start py-10 w-full flex justify-center items-center flex-wrap bg-primary-900">
-      <div className="flex gap-2 flex-wrap justify-center">
+    <div className="snap-start py-10 w-full flex justify-center items-center flex-wrap  bg-primary-900 px-5">
+      <div className="grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-center">
         {testimonials
           .concat(additionalTestimonials)
           .map(({ content, author, job, title }, i) => (

@@ -155,5 +155,55 @@
         "message": "Unesite vašu poruku"
       }
     }
+  },
+  "about": {
+    "hero": {
+      "title": "Naša priča",
+      "desc": "U 2012. Natura je započela s idejom da stvori više od doma za njegu - htjeli smo stvoriti dom. Smješten u mirnom i pitoresknom okruženju, naš prostor je dizajniran da ponudi starijima odmor gdje se osjećaju zbrinuto i povezano. Tijekom godina, rastemo u pouzdanu kuću gdje se stariji i njihove obitelji osjećaju sigurno, znajući da su njihovi voljeni u brizi.",
+      "action": "Slobodno nas <link>kontaktirajte</link>!"
+    },
+    "mission": {
+      "title": "Nudimo najbolju njegu za starije",
+      "mission": "U Naturi, ciljamo stvoriti prostor ispunjen pažnjom, poštovanjem i dostojanstvom. Naše je fokusirano na stvaranje okruženja gdje se svaki stanar osjeća vrijedno, sigurno i pravično podržano tijekom ovog važnog dijela života. S milosrđem u srcu, nastojimo osigurati dom koji ne samo poboljšava zdravlje, već i sreću, osiguravajući da svaki dan donosi udobnost i radost.",
+      "goals": "Želimo stvoriti okruženje u kojemu stariji mogu živjeti s dostojanstvom, izgraditi zna?ajne veze i iskusiti njegu koja stvarno razumije i podržava njihove potrebe. Želimo stvoriti mjesto gdje svaki pojedinac osjeća da je vrijedan i drag. Kroz suosjećanje i pažnju, osiguravamo da svaki stanar cvjeta fyzicki, emocionalno i socijalno."
+    },
+    "values": {
+      "title": "Podjelićemo sa <span>vama</span>",
+      "1": {
+        "title": "Ljubav",
+        "desc": "Tretiramo svakog starijeg kao člana porodice."
+      },
+      "2": {
+        "title": "Predanost",
+        "desc": "Pružamo njegu koja premaši očekivanja."
+      },
+      "3": {
+        "title": "Poštovanje",
+        "desc": "Poštujemo svaku individualnu priču, potrebe i dostojanstvo."
+      },
+      "4": {
+        "title": "Zajednicu",
+        "desc": "Prižamo osjećaj pripadnosti i zajedništva."
+      }
+    },
+    "services": {
+      "title": "Ovdje ćete pronaći",
+      "1": {
+        "title": "Miran ambijent za udobnost i njegu",
+        "desc": "Smješten u mirnom okruženju, naš dom je okružen prirodnim ljepotama, stvarajući miran ambijent savršen za rehabilitaciju i starije osobe."
+      },
+      "2": {
+        "title": "Pazljivo dizajnirane sobe",
+        "desc": "Nudimo jednokrevetne, dvokrevetne i trokrevetne sobe, svaka opremljena privatnim kupaonicama, TV-om, internetom i modernim električnim medicinskim krevetima. Svaki detalj je osiguran radi sigurnosti i udobnosti."
+      },
+      "3": {
+        "title": "Personalizovana, 24-časovna njega",
+        "desc": "Naš tim je dostupan 24 sata, pružajući pažljivu medicinsku njegu i brinući se o osobnim potrebama s milosrđem i stru?noš?u."
+      },
+      "4": {
+        "title": "Trenuci radosti i povezanosti",
+        "desc": "Od uključuju?ih aktivnosti i mirnih šetnji do obroka prilagođenih osobnim preferencijama, stvaramo bujanu zajednicu gdje se stariji osje?aju podr?ani i vrijedni."
+      }
+    }
   }
 }

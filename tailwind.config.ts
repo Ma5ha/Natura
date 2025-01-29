@@ -16,6 +16,7 @@ const config: Config = {
       backgroundImage: {
         roof: "url(/roof.svg)",
         care: "url(/care-2.svg)",
+        about_hero: "url(/about-hero.svg)",
       },
       colors: {
         background: "var(--background)",

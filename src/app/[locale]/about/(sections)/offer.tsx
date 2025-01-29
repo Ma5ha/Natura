@@ -1,38 +1,24 @@
 import { typography } from "@/ui/variants";
 import { twMerge } from "tailwind-merge";
 import Image from "next/image";
+import { getTranslations } from "next-intl/server";
 
-const offerings = [
-  {
-    title: "A Tranquil Setting for Comfort and Care",
-    icon: "/tranquil.png",
-    description:
-      "Nestled in a serene environment, our home is surrounded by natural beauty, creating a peaceful atmosphere perfect for rehabilitation and elderly living.",
-  },
-  {
-    title: "Thoughtfully Designed Accommodations",
-    icon: "/beds.png",
-    description:
-      "We offer single, double, and triple rooms, each equipped with private bathrooms, TVs, internet, and modern electric medical beds. Every detail ensures safety and comfort.",
-  },
-  {
-    title: "Personalized, Around-the-Clock Care",
-    icon: "/clock-24.png",
-    description:
-      "Our team is available 24/7, providing attentive medical care and addressing personal needs with compassion and expertise.",
-  },
+const icon = ["/tranquil.png", "/beds.png", "/clock-24.png", "/community.png"];
 
-  {
-    title: "Moments of Joy and Connection",
-    icon: "/community.png",
-    description:
-      "From engaging activities and serene walks to meals tailored to personal preferences, we foster a vibrant community where residents feel supported and valued.",
-  },
-];
+const getOffer = async () => {
+  const t = await getTranslations("about.services");
+  return icon.map((icon, i) => ({
+    title: t(`${i + 1}.title`),
+    description: t(`${i + 1}.desc`),
+    icon,
+  }));
+};
 
-export default function WeOffer() {
+export default async function WeOffer() {
+  const t = await getTranslations("about.services");
+  const offer = await getOffer();
   return (
-    <section className="page snap snap-center bg-white w-full *:m-auto">
+    <section className="page snap snap-center bg-white w-full *:m-auto min-h-fit">
       <div className="max-w-prose pl-5 py-5">
         <h2
           className={twMerge(
@@ -43,18 +29,18 @@ export default function WeOffer() {
             "mb-10 w-fit"
           )}
         >
-          Here You will find
+          {t("title")}
         </h2>
         <ul className=" mt-10 ">
-          {offerings.map(({ title, description, icon }) => (
+          {offer.map(({ title, description, icon }) => (
             <li key={title} className="mb-5 flex gap-5 items-center">
-              <Image
+              {/* <Image
                 width={50}
                 height={50}
                 src={icon}
                 alt={title}
-                className="w-[50px] h-[50px]"
-              />
+                className="w-[50px] h-[50px]" */}
+              {/* /> */}
               <div>
                 <h3
                   className={twMerge(

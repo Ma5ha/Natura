@@ -8,6 +8,7 @@ import {
   icons,
   PersonStanding,
 } from "lucide-react";
+import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import { twMerge } from "tailwind-merge";
 
@@ -38,7 +39,20 @@ const values = [
   },
 ];
 
-export default function Values() {
+const getValues = async () => {
+  const t = await getTranslations("about.values");
+  return [<HeartHandshake />, <Award />, <Handshake />, <PersonStanding />].map(
+    (icon, i) => ({
+      icon,
+      title: t(`${i + 1}.title`),
+      description: t(`${i + 1}.desc`),
+    })
+  );
+};
+
+export default async function Values() {
+  const t = await getTranslations("about.values");
+  const values = await getValues();
   return (
     <div className="p-5 snap snap-center space-y-5">
       <h2
@@ -47,8 +61,13 @@ export default function Values() {
           typography({ semantic: "largeTitle", color: "black" })
         )}
       >
-        We will give{" "}
-        <span className="bg-roof bg-no-repeat bg-top bg-contain bg-">you</span>
+        {t.rich("title", {
+          span: (text) => (
+            <span className="bg-roof bg-no-repeat bg-top bg-[length:80px_10px]">
+              {text}
+            </span>
+          ),
+        })}
       </h2>
       <ul className="m-auto grid grid-cols-1 sm:grid-cols-2 gap-5 max-w-prose">
         {values.map(({ title, description, icon }) => (
