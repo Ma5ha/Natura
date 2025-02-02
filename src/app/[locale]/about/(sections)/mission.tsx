@@ -1,8 +1,7 @@
-import { Link } from "@/i18n/routing";
-import { button, typography } from "@/ui/variants";
+import { typography } from "@/ui/variants";
 import about1 from "@public/about-1.svg";
 import about2 from "@public/about-2.svg";
-import { getLocale, getTranslations } from "next-intl/server";
+import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import { twMerge } from "tailwind-merge";
 
@@ -11,7 +10,6 @@ const p = "max-w-[40ch]";
 const image = "max-w-[40ch] m-auto";
 export default async function Mission() {
   const t = await getTranslations("about.mission");
-  const locale = await getLocale();
   return (
     <section className="page snap-center bg-white/50 w-full">
       <div className="m-auto *:m-auto space-y-20  bg-white/50 p-5 rounded-lg">

@@ -1,4 +1,4 @@
-import { button, typography } from "@/ui/variants";
+import { typography } from "@/ui/variants";
 import { getTranslations } from "next-intl/server";
 import { twMerge } from "tailwind-merge";
 

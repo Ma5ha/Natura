@@ -103,7 +103,7 @@ export default function HamburgerMenu() {
             )}
             onClick={toggle}
           >
-            {navigation.map(({ label, href }, i) => (
+            {navigation.map(({ label, href }) => (
               <li key={label}>
                 <Link
                   locale={local}

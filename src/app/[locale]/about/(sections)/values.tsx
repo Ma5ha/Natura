@@ -1,53 +1,21 @@
 import { typography } from "@/ui/variants";
-import about1 from "@public/about-1.svg";
-import about2 from "@public/about-2.svg";
-import {
-  Award,
-  Handshake,
-  HeartHandshake,
-  icons,
-  PersonStanding,
-} from "lucide-react";
+import { Award, Handshake, HeartHandshake, PersonStanding } from "lucide-react";
 import { getTranslations } from "next-intl/server";
-import Image from "next/image";
 import { twMerge } from "tailwind-merge";
-
-const pWarper = "lg:flex lg:flex-wrap lg:items-center w-fit space-y-2 *:grow";
-const p = "max-w-[40ch]";
-const image = "max-w-[40ch] m-auto";
-
-const values = [
-  {
-    icon: <HeartHandshake />,
-    title: "Kindness",
-    description: "Treating every resident like family.",
-  },
-  {
-    icon: <Award />,
-    title: "Excellence",
-    description: "Providing care that goes beyond expectations.",
-  },
-  {
-    icon: <Handshake />,
-    title: "Respect",
-    description: "Honoring every individual’s story, needs, and dignity.",
-  },
-  {
-    icon: <PersonStanding />,
-    title: "Community",
-    description: "Building a home where no one feels alone.",
-  },
-];
 
 const getValues = async () => {
   const t = await getTranslations("about.values");
-  return [<HeartHandshake />, <Award />, <Handshake />, <PersonStanding />].map(
-    (icon, i) => ({
-      icon,
-      title: t(`${i + 1}.title`),
-      description: t(`${i + 1}.desc`),
-    })
-  );
+  return [
+    <HeartHandshake key="1" />,
+    <Award key="2" />,
+    <Handshake key="3" />,
+    <PersonStanding key="4" />,
+  ].map((icon, i) => ({
+    key: i,
+    icon,
+    title: t(`${i + 1}.title`),
+    description: t(`${i + 1}.desc`),
+  }));
 };
 
 export default async function Values() {

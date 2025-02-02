@@ -7,6 +7,7 @@ const nextConfig = {
   devIndicators: {
     appIsrStatus: true,
     buildActivityPosition: "bottom-right",
+    output: "export",
   },
 };
 

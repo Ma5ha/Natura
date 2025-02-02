@@ -1,32 +1,40 @@
 "use client";
-import { navigation } from "@/constants/nav";
+
+import { typography } from "@/ui/variants";
+import { NaturaLogo } from "@public/natura-logo";
 import Link from "next/link";
-import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
+
 import { twMerge } from "tailwind-merge";
 
+const navigation = [
+  {
+    label: "Gallery",
+    href: "/",
+  },
+  {
+    label: "Carer",
+    href: "/services",
+  },
+];
 export default function SideNav() {
-  const router = useRouter();
-  const [active, setActive] = useState<string | null>(null);
-
-  useEffect(() => {
-    setActive(router.asPath);
-  }, [router.asPath]);
-
   return (
-    <nav className="flex flex-col gap-2">
-      {navigation.map(({ label, href }) => (
-        <Link
-          key={href}
-          href={href}
-          className={twMerge(
-            "px-4 py-2 rounded-md transition-colors",
-            active === href ? "bg-primary text-white" : "text-gray-900"
-          )}
-        >
-          {label}
-        </Link>
-      ))}
-    </nav>
+    <aside className="inline-block h-full w-[200px] bg-white">
+      <NaturaLogo className="m-auto my-11" lang="sr" />
+      <nav className="w-full h-fit flex flex-col ">
+        {navigation.map(({ label, href }) => (
+          <Link
+            data-active={label === "Gallery"}
+            key={href}
+            href={href}
+            className={twMerge(
+              typography({ weight: "bold", align: "center" }),
+              "px-4 py-2 bg-gray-50 uppercase data-[active='true']:!text-primary"
+            )}
+          >
+            {label}
+          </Link>
+        ))}
+      </nav>
+    </aside>
   );
 }

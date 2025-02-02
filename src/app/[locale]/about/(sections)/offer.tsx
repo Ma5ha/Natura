@@ -1,6 +1,5 @@
 import { typography } from "@/ui/variants";
 import { twMerge } from "tailwind-merge";
-import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 
 const icon = ["/tranquil.png", "/beds.png", "/clock-24.png", "/community.png"];
@@ -32,15 +31,8 @@ export default async function WeOffer() {
           {t("title")}
         </h2>
         <ul className=" mt-10 ">
-          {offer.map(({ title, description, icon }) => (
+          {offer.map(({ title, description }) => (
             <li key={title} className="mb-5 flex gap-5 items-center">
-              {/* <Image
-                width={50}
-                height={50}
-                src={icon}
-                alt={title}
-                className="w-[50px] h-[50px]" */}
-              {/* /> */}
               <div>
                 <h3
                   className={twMerge(

@@ -8,7 +8,6 @@ import { getLocale, getTranslations } from "next-intl/server";
 import { navigation } from "@/constants/nav";
 import { Link } from "@/i18n/routing";
 import { documents } from "@/constants/documentation";
-import { twChain } from "@/ui/tw-chain";
 
 export default async function Footer() {
   const t = await getTranslations();

@@ -1,7 +1,6 @@
 import { typography } from "@/ui/variants";
 import React from "react";
 import { twMerge } from "tailwind-merge";
-import shape from "./shape.svg";
 
 const additionalTestimonials = [
   {
@@ -38,8 +37,11 @@ const Testimonial = () => {
       <div className="grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-center">
         {testimonials
           .concat(additionalTestimonials)
-          .map(({ content, author, job, title }, i) => (
-            <div className={"card bg-white max-w-[40ch] flex flex-col  gap-2"}>
+          .map(({ content, author, job, title }) => (
+            <div
+              key={author}
+              className={"card bg-white max-w-[40ch] flex flex-col  gap-2"}
+            >
               <h4
                 className={typography({
                   color: "black",
