@@ -1,34 +1,40 @@
 import Footer from "./(sections)/footer";
 import Nav from "../components/nav";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server";
-
+import { getMessages, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
+
+export const dynamicParams = false;
+export const revalidate = false;
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
-export default async function RootLayout({
-  children,
-  params,
-}: Readonly<{
-  children: React.ReactNode;
-  params: {
-    locale: string;
-  };
-}>) {
+export default async function RootLayout(
+  props: Readonly<{
+    children: React.ReactNode;
+    params: Promise<{
+      locale: "sr" | "en";
+    }>;
+  }>
+) {
+  const params = await props.params;
+
+  const { children } = props;
+
   const messages = await getMessages({ locale: params.locale });
+  setRequestLocale(params.locale);
 
   return (
     <html lang={params.locale}>
       <body className="font-inter h-screen bg-gray-50 bg-gradient-to-tl from-gray-200/50 from-50% !pt-[64px]">
-        <NextIntlClientProvider messages={messages} locale={params.locale}>
+        <NextIntlClientProvider messages={messages}>
           <Nav />
-          <main className="bg-primary/250 h-full w-full snap-y snap-mandatory overflow-auto ">
-            {children}
-            <Footer />
-          </main>
         </NextIntlClientProvider>
+        <main className="bg-primary/250 h-full w-full snap-y snap-mandatory overflow-auto ">
+          {children}
+          <Footer />
+        </main>
       </body>
     </html>
   );

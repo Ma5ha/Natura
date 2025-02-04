@@ -13,7 +13,13 @@ export default async function Hero() {
       id="hero"
       className="page snap-center bg-hero bg-cover lg:flex sm:items-center sm:justify-center *:m-auto"
     >
-      <Image className="sm:order-1" src={hero.src} alt="hero" />
+      <Image
+        className="sm:order-1"
+        src={hero.src}
+        alt="hero"
+        width={500}
+        height={500}
+      />
       <div className="max-w-[50ch]">
         <div className="mb-5">
           <h1

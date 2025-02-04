@@ -4,9 +4,9 @@ export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
-  params: {
-    locale: string;
-  };
+  params: Promise<{
+    locale: "en" | "sr";
+  }>;
 }>) {
   return (
     <div className="flex h-full gap-5">
