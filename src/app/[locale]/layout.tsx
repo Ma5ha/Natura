@@ -3,10 +3,13 @@ import Nav from "../components/nav";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
+import { Metadata } from "next";
 
-export const dynamicParams = false;
-export const revalidate = false;
-
+export const metadata: Metadata = {
+  icons: { icon: "/natura.svg" },
+  title: "Natura",
+  description: "...",
+};
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
@@ -27,6 +30,9 @@ export default async function RootLayout(
 
   return (
     <html lang={params.locale}>
+      <head>
+        <link rel="icon" href="/natura.ico" />
+      </head>
       <body className="font-inter h-screen bg-gray-50 bg-gradient-to-tl from-gray-200/50 from-50% !pt-[64px]">
         <NextIntlClientProvider messages={messages}>
           <Nav />
