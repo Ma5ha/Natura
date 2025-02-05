@@ -1,10 +1,14 @@
 import { typography } from "@/ui/variants";
 import { ChevronRight } from "lucide-react";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { FC } from "react";
 import { twMerge } from "tailwind-merge";
 
-const Faq: FC = async () => {
+const Faq: FC<{
+  params: Promise<{ locale: "sr" | "en" }>;
+}> = async ({ params }) => {
+  const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations("faq");
   const faq = new Array(14).fill(1).map((_, i) => ({
     question: t(`questions.${i + 1}.question`),
