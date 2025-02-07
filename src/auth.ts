@@ -19,7 +19,6 @@ export const authOptions: AuthOptions = {
   ],
   callbacks: {
     async signIn({ user, account, profile, email, credentials }) {
-      console.log(user);
       if (user.email === "blagmash@gmail.com") return true;
       return false;
     },
