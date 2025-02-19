@@ -1,7 +1,7 @@
 import { button, typography } from "@/ui/variants";
 import { getLocale, getTranslations } from "next-intl/server";
 import { twMerge } from "tailwind-merge";
-import hero from "@public/hero.svg";
+
 import { Link } from "@/i18n/routing";
 import Image from "next/image";
 
@@ -16,8 +16,8 @@ export default async function Hero() {
       <Image
         priority
         className="sm:order-1"
-        src={hero.src}
-        alt="hero"
+        src="hero.min.svg"
+        alt="hero image"
         width={500}
         height={500}
       />
