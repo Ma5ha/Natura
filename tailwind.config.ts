@@ -10,8 +10,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        serif: ['"EB Garamond"', "serif"],
-        sans: ["Inter", "sans"],
+        serif: ["var(--font-garamond)"],
+        sans: ["var(--font-inter)"],
       },
       backgroundImage: {
         roof: "url(/roof.svg)",
@@ -40,6 +40,5 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("tailwindcss-font-inter")],
 };
 export default config;

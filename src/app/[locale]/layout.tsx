@@ -5,6 +5,15 @@ import { getMessages, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { Metadata } from "next";
 
+import { Inter, EB_Garamond } from "next/font/google";
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
+const garamond = EB_Garamond({
+  subsets: ["latin"],
+  variable: "--font-garamond",
+});
 export const metadata: Metadata = {
   icons: { icon: "/natura.svg" },
   title: "Natura",
@@ -29,7 +38,10 @@ export default async function RootLayout(
   setRequestLocale(params.locale);
 
   return (
-    <html lang={params.locale}>
+    <html
+      lang={params.locale}
+      className={`${inter.variable} ${garamond.variable}`}
+    >
       <head>
         <link rel="icon" href="/natura.ico" />
       </head>
