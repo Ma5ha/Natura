@@ -14,6 +14,7 @@ export default async function Hero() {
       className="page snap-center bg-hero bg-cover lg:flex sm:items-center sm:justify-center *:m-auto"
     >
       <Image
+        priority
         className="sm:order-1"
         src={hero.src}
         alt="hero"

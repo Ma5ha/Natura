@@ -83,7 +83,7 @@ export default function LocalSwitcher() {
         <MenuButton className="flex items-center [&_svg]:size-[18px] gap-1 bg-gray-100 px-2 py-1 rounded-lg focus:ring-2 focus:ring-primary">
           <span
             className={typography({
-              color: "primary",
+              color: "black",
               weight: "thin",
               size: "small",
             })}

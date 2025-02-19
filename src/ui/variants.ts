@@ -1,10 +1,10 @@
 import { tv } from "tailwind-variants";
 
 export const button = tv({
-  base: "font-bold text-gray-500 py-3 px-4 text-white rounded bg-primary flex gap-2",
+  base: "font-bold py-3 px-4 text-white rounded bg-primary-700 flex gap-2",
   variants: {
     sematic: {
-      secondary: "bg-transparent text-primary border border-primary",
+      secondary: "bg-transparent text-primary-700 border border-primary-700",
       ghost: "text-primary bg-transparent underline w-fit",
     },
   },
@@ -26,7 +26,7 @@ export const typography = tv({
     },
     color: {
       black: "!text-black",
-      primary: "!text-gray-500",
+      primary: "!text-gray-700",
       inverse: "!text-white",
       brand: "!text-primary",
     },

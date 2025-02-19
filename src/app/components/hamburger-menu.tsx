@@ -21,7 +21,11 @@ export default function HamburgerMenu() {
     <>
       <div className="relative menu size-[24px] flex justify-center">
         <div className="w-[24px] h-[24px] relative menu lg:hidden">
-          <button className="w-[24px] h-[24px]" onClick={toggle}>
+          <button
+            className="w-[24px] h-[24px]"
+            onClick={toggle}
+            aria-label="Open menu"
+          >
             <Menu className="w-[24px] h-[24px] lg:stroke-green-700" />
           </button>
         </div>
@@ -31,8 +35,10 @@ export default function HamburgerMenu() {
           "fixed bg-white top-0 left-0 h-screen w-full hidden z-50",
           isOpen && " !flex"
         )}
+        role="dialog"
+        aria-modal="true"
       >
-        <div className="min-w-[200px] grow  p-0 flex-col h-full hidden sm:flex">
+        <div className="min-w-[200px] grow p-0 flex-col h-full hidden sm:flex">
           <div className="flex w-full h-full">
             <div className="bg-gray-100 h-full w-1/2 flex items-center justify-center">
               <NaturaLogo
@@ -42,12 +48,15 @@ export default function HamburgerMenu() {
                 height={150}
               />
             </div>
-            <div className="h-full w-1/2 flex items-center justify-center  "></div>
+            <div className="h-full w-1/2 flex items-center justify-center"></div>
           </div>
 
           <div className="flex w-full h-full">
             <div className="h-full w-1/2 flex items-center justify-center p-10">
-              <p className={typography({ color: "primary", align: "center" })}>
+              <p
+                className={typography({ color: "primary", align: "center" })}
+                aria-label="Location"
+              >
                 Dom {'"Natura"'} se nalazi u{" "}
                 <span
                   className={typography({ color: "primary", weight: "bold" })}
@@ -64,12 +73,13 @@ export default function HamburgerMenu() {
                     align: "center",
                   })
                 )}
+                aria-label="Contact information"
               >
                 <li>
-                  <a>naturainfo@gmail.com</a>
+                  <a href="mailto:naturainfo@gmail.com">naturainfo@gmail.com</a>
                 </li>
                 <li>
-                  <a> (+387)57/223-945</a>
+                  <a href="tel:+38757223945">(+387)57/223-945</a>
                 </li>
               </ul>
             </div>
@@ -79,7 +89,11 @@ export default function HamburgerMenu() {
         <div className="min-w-[200px] grow bg-[#033830]">
           <div className="h-[64px] flex items-center justify-end px-10">
             <div className="relative menu size-[24px] flex justify-center">
-              <button className="w-[24px] h-[24px]" onClick={toggle}>
+              <button
+                className="w-[24px] h-[24px]"
+                onClick={toggle}
+                aria-label="Close menu"
+              >
                 <X
                   color="white"
                   className={twJoin(
@@ -102,6 +116,7 @@ export default function HamburgerMenu() {
               })
             )}
             onClick={toggle}
+            aria-label="Main navigation"
           >
             {navigation.map(({ label, href }) => (
               <li key={label}>
@@ -113,6 +128,7 @@ export default function HamburgerMenu() {
                     href === pathname && "!text-white"
                   )}
                   href={href}
+                  aria-current={href === pathname ? "page" : undefined}
                 >
                   {t(label)}
                 </Link>

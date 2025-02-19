@@ -12,7 +12,7 @@ import Show from "../components/show";
 import { Link, usePathname } from "@/i18n/routing";
 import { navigation } from "@constants/nav";
 
-const activeClass = "text-primary border-b-primary h-full border-b-2 ";
+const activeClass = "text-primary-700 border-b-primary h-full border-b-2 ";
 
 export default function Nav() {
   const isLg = !useMedia(

@@ -26,7 +26,7 @@ export default async function Footer() {
         </span>
 
         <ul className="flex flex-col gap-2">
-          <span
+          <li
             className={twMerge(
               typography({ semantic: "title", color: "inverse" }),
               typography({ color: "inverse" }),
@@ -34,7 +34,7 @@ export default async function Footer() {
             )}
           >
             {t("general.menu")}
-          </span>
+          </li>
 
           {navigation.map(({ label, href }) => (
             <li
@@ -44,7 +44,7 @@ export default async function Footer() {
                   weight: "paragraph",
                   size: "small",
                 }),
-                "hover:!text-primary cursor-pointer"
+                "hover:!text-primary cursor-pointer !text-gray-400"
               )}
             >
               <Link locale={locale} href={href}>
@@ -55,7 +55,7 @@ export default async function Footer() {
         </ul>
 
         <ul className="flex flex-col gap-2">
-          <span
+          <li
             className={twMerge(
               typography({ semantic: "title", color: "inverse" }),
               typography({ color: "inverse" }),
@@ -63,7 +63,7 @@ export default async function Footer() {
             )}
           >
             {t("general.documents")}
-          </span>
+          </li>
 
           {documents.map(({ label, href }) => (
             <li
@@ -73,7 +73,7 @@ export default async function Footer() {
                   weight: "paragraph",
                   size: "small",
                 }),
-                "hover:!text-primary cursor-pointer"
+                "hover:!text-primary cursor-pointe !text-gray-400"
               )}
             >
               <a href={href} download>
@@ -85,26 +85,28 @@ export default async function Footer() {
       </div>
       <div className=" bg-gray-100 flex justify-between px-10 py-20">
         <div className="flex flex-col justify-center items-start h-full md:flex-row md:items-center">
-          <h4 className={typography({ semantic: "title" })}>Contact</h4>
+          <h2 className={typography({ semantic: "title", size: "large" })}>
+            Contact
+          </h2>
           <span className="flex items-center gap-2 md:ml-10">
-            <Phone width={14} height={14} className="stroke-gray-500" />
+            <Phone width={20} height={20} className="stroke-gray-500" />
             <a
               href="tel:+387 57 223 945"
               className={typography({
-                size: "small",
+                size: "medium",
               })}
             >
               +38757/223-945
             </a>
           </span>
           <span className="flex items-center gap-2 md:ml-4">
-            <Mail width={14} height={14} className="stroke-gray-500" />
+            <Mail width={20} height={20} className="stroke-gray-500" />
             <a
               href="mailto:naturainfo@gmail.com"
               className={typography({
                 weight: "paragraph",
 
-                size: "small",
+                size: "medium",
               })}
             >
               naturainfo@gmail.com
