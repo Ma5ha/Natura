@@ -1,9 +1,9 @@
 import Hero from "./(sections)/hero";
 import Contact from "./(sections)/contact";
-import Map from "./(sections)/map";
 import Testimonial from "../components/testimonials";
 import Summary from "./(sections)/summary";
 import { setRequestLocale } from "next-intl/server";
+import GoogleMap from "./(sections)/dynamic-map";
 
 export default async function Home({
   params,
@@ -18,7 +18,7 @@ export default async function Home({
       <Summary />
       <Testimonial />
       <Contact />
-      <Map />
+      <GoogleMap />
     </>
   );
 }

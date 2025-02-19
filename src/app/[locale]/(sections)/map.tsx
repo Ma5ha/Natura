@@ -166,4 +166,4 @@ function MyComponent() {
   );
 }
 
-export default React.memo(MyComponent);
+export default MyComponent;
