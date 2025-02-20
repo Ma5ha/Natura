@@ -1,9 +1,9 @@
 import { button, typography } from "@/ui/variants";
 import { getLocale, getTranslations } from "next-intl/server";
 import { twMerge } from "tailwind-merge";
-
 import { Link } from "@/i18n/routing";
-import Image from "next/image";
+
+import HeroImage from "./hero-image";
 
 export default async function Hero() {
   const local = await getLocale();
@@ -13,15 +13,7 @@ export default async function Hero() {
       id="hero"
       className="page snap-center bg-hero bg-cover lg:flex sm:items-center sm:justify-center *:m-auto"
     >
-      <Image
-        className="sm:order-1"
-        src="hero.min.svg"
-        alt="hero image"
-        width={500}
-        height={500}
-        priority
-        placeholder="empty"
-      />
+      <HeroImage />
       <div className="max-w-[50ch]">
         <div className="mb-5">
           <h1

@@ -5,13 +5,19 @@ import { NaturaLogo } from "../../../public/natura-logo";
 import { twJoin } from "tailwind-merge";
 
 import { useLocale, useTranslations } from "next-intl";
-import LocalSwitcher from "../components/local-switcher";
-import HamburgerMenu from "../components/hamburger-menu";
+
 import useMedia from "../hooks/media";
 import Show from "../components/show";
 import { Link, usePathname } from "@/i18n/routing";
 import { navigation } from "@constants/nav";
+import dynamic from "next/dynamic";
 
+const HamburgerMenu = dynamic(() => import("../components/hamburger-menu"), {
+  ssr: false,
+});
+const LocalSwitcher = dynamic(() => import("../components/local-switcher"), {
+  ssr: false,
+});
 const activeClass = "text-primary-700 border-b-primary h-full border-b-2 ";
 
 export default function Nav() {
