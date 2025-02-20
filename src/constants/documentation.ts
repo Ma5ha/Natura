@@ -1,11 +1,11 @@
 export const applicantQuestionnaires = {
   label: "questionnaire",
-  href: "/documentation/lični-list-korisinka.docx",
+  href: "protocol",
 };
 
 export const entranceProtocol = {
   label: "protocol",
-  href: "/documentation/protokol-za-prijem.docx",
+  href: "/protocol",
 };
 
 export const documents = [entranceProtocol, applicantQuestionnaires];

@@ -76,9 +76,9 @@ export default async function Footer() {
                 "hover:!text-primary cursor-pointe !text-gray-400"
               )}
             >
-              <a href={href} download>
+              <Link href={href} locale={locale}>
                 {t(["documents", label].join("."))}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>

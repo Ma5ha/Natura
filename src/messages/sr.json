@@ -205,5 +205,39 @@
         "desc": "Od uključuju?ih aktivnosti i mirnih šetnji do obroka prilagođenih osobnim preferencijama, stvaramo bujanu zajednicu gdje se stariji osje?aju podr?ani i vrijedni."
       }
     }
+  },
+  "protocol": {
+    "title": "Prijem u Dom za starija lica ",
+    "subtitle": "Potrebno je dostaviti slijedeće:",
+    "documentation": "Obavezna dokumentacija",
+    "documentationList": {
+      "1": "Izvod iz matične knjige rođenih",
+      "2": "Fotokopija lične karte",
+      "3": "Zdravstvena knjižica",
+      "4": "Nalaz neuropsihijatra",
+      "5": "Potvrda doktora opšte prakse da korisnik ne boluje od zaraznih bolesti",
+      "6": "Izvod iz zdravstvenog kartona o upotrebi lijekova"
+    },
+    "clothes": "Odjevni predmeti <small>(potrebno prethodno obilježiti)</small>",
+    "clothesList": {
+      "1": "Pidžama x2",
+      "2": "Trenerka, donji dio x2",
+      "3": "Pamučne majice, duksevi",
+      "4": "Prsluk x2",
+      "5": "Džemper",
+      "6": "Potkošulje",
+      "7": "Donji veš",
+      "8": "Papuče/natikače"
+    },
+    "other": "Ostalo",
+    "otherList": {
+      "1": "Pribor za brijanje",
+      "2": "Češalj",
+      "3": "Pasta za zube, četkica",
+      "4": "Velika kutija za lijekove",
+      "5": "Sedmični dozator za lijekove sa četiri pregrade x2",
+      "6": "Kutija za protezu + Corega tablete"
+    },
+    "button": "Preuzimi"
   }
 }

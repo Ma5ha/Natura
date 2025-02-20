@@ -48,11 +48,12 @@ export default async function RootLayout(
       <body className="font-inter h-screen bg-gray-50 bg-gradient-to-tl from-gray-200/50 from-50% !pt-[64px]">
         <NextIntlClientProvider messages={messages}>
           <Nav />
+
+          <main className="bg-primary/250 h-full w-full snap-y snap-mandatory overflow-auto ">
+            {children}
+            <Footer />
+          </main>
         </NextIntlClientProvider>
-        <main className="bg-primary/250 h-full w-full snap-y snap-mandatory overflow-auto ">
-          {children}
-          <Footer />
-        </main>
       </body>
     </html>
   );

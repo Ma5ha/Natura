@@ -205,5 +205,39 @@
         "desc": "From engaging activities and serene walks to meals tailored to personal preferences, we foster a vibrant community where residents feel supported and valued."
       }
     }
+  },
+  "protocol": {
+    "title": "Admission to the Home for the Elderly ",
+    "subtitle": "The following is required:",
+    "documentation": "Mandatory documentation",
+    "documentationList": {
+      "1": "Birth certificate",
+      "2": "Copy of ID card",
+      "3": "Health booklet",
+      "4": "Neuropsychologist's report",
+      "5": "Doctor's confirmation of no infectious diseases",
+      "6": "Copy of medical record of medication use"
+    },
+    "clothes": "Clothing items <small>(must be labeled beforehand)</small>",
+    "clothesList": {
+      "1": "Pajamas x2",
+      "2": "Athletic pants x2",
+      "3": "Cotton shirts, underwear",
+      "4": "Sweater x2",
+      "5": "Jeans",
+      "6": "T-shirts",
+      "7": "Lower body clothes",
+      "8": "Slippers/socks"
+    },
+    "other": "Other",
+    "otherList": {
+      "1": "Shaving kit",
+      "2": "Comb",
+      "3": "Toothpaste, toothbrush",
+      "4": "Large pill box",
+      "5": "Weekly pill dispenser with four compartments x2",
+      "6": "Box of dentures + Corega tablets"
+    },
+    "button": "Download"
   }
 }
