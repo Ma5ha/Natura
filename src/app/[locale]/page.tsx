@@ -1,10 +1,12 @@
-import Hero from "./(sections)/hero";
-import Contact from "./(sections)/contact";
-import Testimonial from "../components/testimonials";
-import Summary from "./(sections)/summary";
 import { setRequestLocale } from "next-intl/server";
-import GoogleMap from "./(sections)/dynamic-map";
 
+import dynamic from "next/dynamic";
+
+const Hero = dynamic(() => import("./(sections)/hero"));
+const Contact = dynamic(() => import("./(sections)/contact"));
+const Testimonial = dynamic(() => import("../components/testimonials"));
+const Summary = dynamic(() => import("./(sections)/summary"));
+const GoogleMap = dynamic(() => import("./(sections)/map"));
 export default async function Home({
   params,
 }: {

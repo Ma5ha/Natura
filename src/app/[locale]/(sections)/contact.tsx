@@ -63,7 +63,7 @@ export default async function Contact() {
         {info.map(({ title, Icon, children }) => (
           <div
             key={title}
-            className="card bg-white sm:w-[30ch] grow  last:mr-auto max-w-1/2"
+            className="card bg-white w-[30ch] lg:!max-w-full grow  last:mr-auto md:max-w-1/2 "
           >
             <div className="flex gap-2 ">
               <Icon className="stroke-primary" />
