@@ -48,7 +48,7 @@ export default async function Services() {
       id="services"
       className="page snap-start flex flex-wrap xl:flex-nowrap gap-10 justify-center items-top relative"
     >
-      <div className="max-w-prose bg-white px-5 py-20 h-full card backdrop-blur max-h-[800px]">
+      <div className="max-w-prose bg-white px-5 py-20 h-full card backdrop-blur-sm max-h-[800px]">
         <h1 className="title mb-10">{t("title")}</h1>
         <p className={twMerge("text-justify ", typography())}>
           {t.rich("desc.services", {

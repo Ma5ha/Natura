@@ -1,11 +1,8 @@
 "use client";
-import resolveConfig from "tailwindcss/resolveConfig";
-import tailwindConfig from "../../../tailwind.config";
+
 import { NaturaLogo } from "../../../public/natura-logo";
 import { twJoin } from "tailwind-merge";
-
 import { useLocale, useTranslations } from "next-intl";
-
 import useMedia from "../hooks/media";
 import Show from "../components/show";
 import { Link, usePathname } from "@/i18n/routing";
@@ -21,16 +18,14 @@ const LocalSwitcher = dynamic(() => import("../components/local-switcher"), {
 const activeClass = "text-primary-700 border-b-primary h-full border-b-2 ";
 
 export default function Nav() {
-  const isLg = !useMedia(
-    `(min-width:${resolveConfig(tailwindConfig).theme.screens.lg})`
-  );
+  const isLg = !useMedia(`(min-width:var(--breakpoint-lg))`);
 
   const t = useTranslations("nav");
   const pathname = usePathname();
   const locale = useLocale();
 
   return (
-    <nav className="px-10 flex gap-2 justify-between items-center shadow-sm fixed w-screen z-50 bg-white backdrop-blur-sm top-0 h-[64px]">
+    <nav className="px-10 flex gap-2 justify-between items-center shadow-xs fixed w-screen z-50 bg-white backdrop-blur-xs top-0 h-[64px]">
       <NaturaLogo
         lang={locale as "sr" | "en"}
         className="min-w-[50px]"

@@ -44,7 +44,7 @@ export default async function Footer() {
                   weight: "paragraph",
                   size: "small",
                 }),
-                "hover:!text-primary cursor-pointer !text-gray-400"
+                "hover:text-primary! cursor-pointer text-gray-400!"
               )}
             >
               <Link locale={locale} href={href}>
@@ -73,7 +73,7 @@ export default async function Footer() {
                   weight: "paragraph",
                   size: "small",
                 }),
-                "hover:!text-primary cursor-pointe !text-gray-400"
+                "hover:text-primary! cursor-pointe text-gray-400!"
               )}
             >
               <Link href={href} locale={locale}>

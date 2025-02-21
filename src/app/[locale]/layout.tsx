@@ -45,7 +45,7 @@ export default async function RootLayout(
       <head>
         <link rel="icon" href="/natura.ico" />
       </head>
-      <body className="font-inter h-screen bg-gray-50 bg-gradient-to-tl from-gray-200/50 from-50% !pt-[64px]">
+      <body className="font-inter h-screen bg-gray-50 bg-linear-to-tl from-gray-200/50 from-50% pt-[64px]!">
         <NextIntlClientProvider messages={messages}>
           <Nav />
 

@@ -16,7 +16,7 @@ type Props = {
 export const Option: FC<Select.SelectItemProps> = ({ children, ...props }) => (
   <Select.Item
     {...props}
-    className="rounded-md outline-none px-3 py-4 hover:bg-gray-50 cursor-pointer data-[state=checked]:bg-gray-200"
+    className="rounded-md outline-hidden px-3 py-4 hover:bg-gray-50 cursor-pointer data-[state=checked]:bg-gray-200"
   >
     <Select.ItemText> {children}</Select.ItemText>
   </Select.Item>
@@ -39,7 +39,7 @@ const SelectComponent: FC<Props> & { Option: typeof Option } = ({
           {...trigger}
           className={twMerge(
             typography({ color: "black", align: "left" }),
-            "rounded-md px-3 py-4 bg-gray-50 outline-primary min-h-[56px] data-[placeholder]:!text-gray-500 data-[placeholder]:!font-[400] !font-[400] focus:ring-2 ring-primary data-[state=open]:ring-2 "
+            "rounded-md px-3 py-4 bg-gray-50 outline-primary min-h-[56px] data-placeholder:text-gray-500! data-placeholder:font-[400]! font-[400]! focus:ring-2 ring-primary data-[state=open]:ring-2 "
           )}
         >
           <Select.Value placeholder={placeholder} {...value} />

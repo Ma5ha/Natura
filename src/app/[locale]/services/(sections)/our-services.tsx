@@ -29,7 +29,7 @@ const rightSideCards = [
 export default function OurServices() {
   return (
     <section className=" snap-start flex flex-wrap xl:flex-nowrap gap-10 justify-center items-top relative p-5 md:p-20">
-      <div className="max-w-prose bg-white px-5 py-20 h-full card backdrop-blur max-h-[800px]">
+      <div className="max-w-prose bg-white px-5 py-20 h-full card backdrop-blur-sm max-h-[800px]">
         <h1 className="title mb-10">Services</h1>
         <p className={twMerge("text-justify ", typography())}>
           `&quot;` Natura `&quot;` offers a comprehensive care program for the

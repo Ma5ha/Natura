@@ -33,7 +33,7 @@ export default function HamburgerMenu() {
       <div
         className={twJoin(
           "fixed bg-white top-0 left-0 h-screen w-full hidden z-50",
-          isOpen && " !flex"
+          isOpen && " flex!"
         )}
         role="dialog"
         aria-modal="true"
@@ -125,7 +125,7 @@ export default function HamburgerMenu() {
                   key={label}
                   className={twJoin(
                     "ml-5  h-full pb-5 tracking-tighter  w-fit",
-                    href === pathname && "!text-white"
+                    href === pathname && "text-white!"
                   )}
                   href={href}
                   aria-current={href === pathname ? "page" : undefined}

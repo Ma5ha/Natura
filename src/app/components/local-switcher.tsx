@@ -96,7 +96,7 @@ export default function LocalSwitcher() {
           unmount
           transition={false}
           anchor="bottom end"
-          className="w-[20ch] [&_svg]:size-[18px] *:flex *:gap-1 *:items-center z-50  rounded-xl border border-white/5 bg-gray-50 p-2 focus:outline-none  hover:*:bg-gray-700"
+          className="w-[20ch] [&_svg]:size-[18px] *:flex *:gap-1 *:items-center z-50  rounded-xl border border-white/5 bg-gray-50 p-2 focus:outline-hidden  *:hover:bg-gray-700"
         >
           <MenuItem>
             <Link

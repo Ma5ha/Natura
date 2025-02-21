@@ -28,7 +28,7 @@ export default function SideNav() {
             href={href}
             className={twMerge(
               typography({ weight: "bold", align: "center" }),
-              "px-4 py-2 bg-gray-50 uppercase data-[active='true']:!text-primary"
+              "px-4 py-2 bg-gray-50 uppercase data-[active='true']:text-primary!"
             )}
           >
             {label}

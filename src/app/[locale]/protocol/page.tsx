@@ -1,6 +1,7 @@
 import { button, typography } from "@/ui/variants";
 import { Download } from "lucide-react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import dynamic from "next/dynamic";
 import { twMerge } from "tailwind-merge";
 
 export default async function Documents({
