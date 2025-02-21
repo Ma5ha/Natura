@@ -47,13 +47,13 @@ export default async function Values() {
               {icon}
             </span>
             <div>
-              <h4
+              <h3
                 className={twMerge(
                   typography({ semantic: "title", color: "primary" })
                 )}
               >
                 {title}:
-              </h4>
+              </h3>
               <p className={typography()}>{description}</p>
             </div>
           </li>
