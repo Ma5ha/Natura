@@ -32,10 +32,10 @@ export default function OurServices() {
       <div className="max-w-prose bg-white px-5 py-20 h-full card backdrop-blur-sm max-h-[800px]">
         <h1 className="title mb-10">Services</h1>
         <p className={twMerge("text-justify ", typography())}>
-          `&quot;` Natura `&quot;` offers a comprehensive care program for the
-          elderly, providing tailored medical and personal services. Our highly
-          qualified nurses and caregivers are always available, ensuring
-          personal care and assistance to each resident.
+          Natura offers a comprehensive care program for the elderly, providing
+          tailored medical and personal services. Our highly qualified nurses
+          and caregivers are always available, ensuring personal care and
+          assistance to each resident.
           <br />
           <br />
           The meals provided are fully adapted to the specific dietary and

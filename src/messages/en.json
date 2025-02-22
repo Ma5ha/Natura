@@ -239,5 +239,37 @@
       "6": "Box of dentures + Corega tablets"
     },
     "button": "Download"
+  },
+  "services": {
+    "title": "Services",
+    "desc": "Natura offers a comprehensive care program for the elderly, providing tailored medical and personal services. Our highly qualified nurses and caregivers are always available, ensuring personal care and assistance to each resident.<br /><br />The meals provided are fully adapted to the specific dietary and health needs of the elderly. Experienced doctors, specializing in cardiology and internal medicine, take care of the residents' health, while a modern ambulance service is available for emergency transport and medical appointments upon request.<br /><br />This holistic approach ensures a safe, comfortable, and supportive environment for all residents.",
+    "leftSideCards": {
+      "1": {
+        "label": "Activity",
+        "data": "35"
+      },
+      "2": {
+        "label": "Employed",
+        "data": "45"
+      },
+      "3": {
+        "label": "Beds",
+        "data": "70"
+      }
+    },
+    "rightSideCards": {
+      "1": {
+        "label": "Staff",
+        "desc": "Our highly qualified medical sisters and caregivers, as well as other staff, are always available for our users"
+      },
+      "2": {
+        "label": "Doctors",
+        "desc": "Our users are cared for by recognized doctors in the fields of cardiology, internal medicine…"
+      },
+      "3": {
+        "label": "Diet",
+        "desc": "The diet is fully adapted to the age of the user and can be adapted according to health status"
+      }
+    }
   }
 }
