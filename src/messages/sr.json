@@ -239,5 +239,99 @@
       "6": "Kutija za protezu + Corega tablete"
     },
     "button": "Preuzimi"
+  },
+  "services": {
+    "title": "Usluge",
+    "desc": "Natura nudi sveobuhvatan program njege za starije osobe, pružajući prilagođene medicinske i lične usluge. Naše visokokvalifikovane medicinske sestre i njegovatelji su uvijek dostupni, osiguravajući ličnu njegu i podršku svakom korisniku. <br></br><br></br> Obroci su u potpunosti prilagođeni specifičnim dijetetskim i zdravstvenim potrebama starijih osoba. Iskusni ljekari, specijalizirani za kardiologiju i internu medicinu, brinu o zdravlju korisnika, dok je savremena ambulantna služba dostupna za hitan transport i medicinske preglede na zahtjev.<br></br> <br></br> Ovakav holistički pristup osigurava sigurno, udobno i podržavajuće okruženje za sve korisnike.",
+    "leftSideCards": {
+      "1": {
+        "label": "Aktivnosti",
+        "data": "35"
+      },
+      "2": {
+        "label": "Zaposlenih",
+        "data": "45"
+      },
+      "3": {
+        "label": "Kreveta",
+        "data": "70"
+      }
+    },
+    "rightSideCards": {
+      "1": {
+        "label": "Osoblje",
+        "desc": "Naše visokokvalifikovane medicinske sestre i njegovateljice, kao i ostalo osoblje su uvijek tu za naše korisnike."
+      },
+      "2": {
+        "label": "Ljekari",
+        "desc": "Mi se brinemo o zdravlju naših korisnika, dok je moderna ambulanta za hitne prevoze i liječenje dostupna za hitne slučajeve i medicinske konsultacije po zahtjevu."
+      },
+      "3": {
+        "label": "Dijeta",
+        "desc": "Ishrana se u potpunosti prilagođava životnoj dobi korisnika i može se prilagođavati u odnosu na zdravstveno stanje."
+      }
+    }
+  },
+  "personalCard": {
+    "title": "Lični list korisnika",
+    "article1": {
+      "title": "Opšti podaci o korisniku",
+      "list": {
+        "1": "Prezime i ime korisnika",
+        "2": "Djevojačko prezime",
+        "3": "Broj lične karte",
+        "4": "Mjesto izdavanja",
+        "5": "JMBG",
+        "6": "Pol",
+        "7": "Državljanstvo",
+        "8": "Etnička i vjerska pripadnost",
+        "9": "Ime oca",
+        "10": "Ime majke",
+        "11": "Djevojačko prezime majke",
+        "12": "Dan, mjesec i godina rođenja",
+        "13": "Mjesto i adresa boravka prije dolaska u ustanovu",
+        "14": "Bračno stanje",
+        "15": "Školska sprema",
+        "16": "Zanimanje u aktivnom periodu života",
+        "17": "Redovna lična primanja (vrsta i mjesečni iznos)",
+        "18": "Da li je zdravstveno osiguran i po kom osnovu",
+        "19": "Podaci o imovini koju posjeduje",
+        "20": "Podaci o korištenju slobodnog vremena"
+      }
+    },
+    "article2": {
+      "title": "Zdravstveno i funkcionalno stanje",
+      "list": {
+        "1": "Da li je korisnik pokretan",
+        "2": "Da li korisnik koristi ortopedska pomagala",
+        "3": "Da li korisnik ima hronične bolesti",
+        "4": "Vrsta i težina bolesti",
+        "5": "Da li je korisnik mentalno stabilan",
+        "6": "Da li korisnik koristi terapiju",
+        "7": "Vrsta terapije",
+        "8": "Da li korisnik zahteva specijalnu njegu",
+        "9": "Opis specijalne njege"
+      }
+    },
+    "article3": {
+      "title": "Porodično stanje",
+      "list": {
+        "1": "Broj i starosna doba djece",
+        "2": "Da li je korisnik razveden",
+        "3": "Da li je korisnik udovac",
+        "4": "Da li ima bračnog druga/sestru",
+        "5": "Broj i starosna doba bračnog druga/sestre"
+      }
+    },
+    "article4": {
+      "title": "Podaci u vezi sa smještajem",
+      "list": {
+        "1": "Da li je korisnik imao prethodno iskustvo sa smještajem u domovima za starije osobe",
+        "2": "Da li je korisnik imao prethodno iskustvo sa smještajem u ustanovama socijalne skrbi",
+        "3": "Da li je korisnik imao prethodno iskustvo sa smještajem u ustanovama zdravstvene skrbi",
+        "4": "Da li je korisnik imao prethodno iskustvo sa smještajem u ustanovama za ljude sa invaliditetom"
+      }
+    },
+    "button": "Preuzmi dokument"
   }
 }

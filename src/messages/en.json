@@ -271,5 +271,67 @@
         "desc": "The diet is fully adapted to the age of the user and can be adapted according to health status"
       }
     }
+  },
+  "personalCard": {
+    "title": "Personal Data",
+    "article1": {
+      "title": "General Information",
+      "list": {
+        "1": "Last name and first name",
+        "2": "Maiden name",
+        "3": "ID card number",
+        "4": "Place of issue",
+        "5": "JMBG",
+        "6": "Gender",
+        "7": "Citizenship",
+        "8": "Ethnic and religious affiliation",
+        "9": "Father's name",
+        "10": "Mother's name",
+        "11": "Mother's maiden name",
+        "12": "Date, month and year of birth",
+        "13": "Place and address of residence before entering the institution",
+        "14": "Marital status",
+        "15": "Education",
+        "16": "Occupation during active life",
+        "17": "Regular personal income (type and monthly amount)",
+        "18": "Is the user health insured and on what basis",
+        "19": "Information about the property he owns",
+        "20": "Information about the use of free time"
+      }
+    },
+    "article2": {
+      "title": "Health and Functional Status",
+      "list": {
+        "1": "Is the user mobile",
+        "2": "Does the user use orthopedic aids",
+        "3": "Does the user have chronic illnesses",
+        "4": "Type and severity of illness",
+        "5": "Is the user mentally stable",
+        "6": "Does the user use therapy",
+        "7": "Type of therapy",
+        "8": "Does the user require special care",
+        "9": "Description of special care"
+      }
+    },
+    "article3": {
+      "title": "Family Status",
+      "list": {
+        "1": "Number and age of children",
+        "2": "Is the user divorced",
+        "3": "Is the user a widow",
+        "4": "Does the user have a spouse/sister",
+        "5": "Number and age of spouse/sister"
+      }
+    },
+    "article4": {
+      "title": "Accommodation Data",
+      "list": {
+        "1": "Has the user had previous experience with accommodation in homes for the elderly",
+        "2": "Has the user had previous experience with accommodation in social care institutions",
+        "3": "Has the user had previous experience with accommodation in health care institutions",
+        "4": "Has the user had previous experience with accommodation in institutions for people with disabilities"
+      }
+    },
+    "button": "Download document"
   }
 }
