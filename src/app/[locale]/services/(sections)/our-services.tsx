@@ -1,52 +1,38 @@
 import { typography } from "@/ui/variants";
 import { Apple, Bed, Stethoscope, Users, Volleyball } from "lucide-react";
+import { getTranslations } from "next-intl/server";
 import { twMerge } from "tailwind-merge";
 
-const leftSideCards = [
-  { label: "Activity", data: 35, Icon: Volleyball },
-  { label: "Employed", data: 45, Icon: Users },
-  { label: "Beds", data: 70, Icon: Bed },
-];
+const getLeftSideCards = async () => {
+  const t = await getTranslations("services.leftSideCards");
+  return [
+    { label: t("1"), data: 35, Icon: Volleyball },
+    { label: t("2"), data: 45, Icon: Users },
+    { label: t("3"), data: 70, Icon: Bed },
+  ];
+};
 
-const rightSideCards = [
-  {
-    label: "Staff",
-    desc: "Naše visokokvalifikovane medicinske sestre i njegovateljice, kao i ostalo osoblje je uvijek tu za naše korisnike",
-    Icon: Users,
-  },
-  {
-    label: "Doctors",
-    desc: "O našim korisnicima brinu priznati doktori iz oblasti kardiologije, interne medicine…",
-    Icon: Stethoscope,
-  },
-  {
-    label: "Diet",
-    desc: "Ishrana je u potpunosti prilagođena životnoj dobi korisnika i može se prilagođavati u odnosu na zdravstveno stanje",
-    Icon: Apple,
-  },
-];
+const getRightSideCards = async () => {
+  const t = await getTranslations("services.rightSideCards");
+  return [
+    { label: t("1.label"), desc: t("1.desc"), Icon: Users },
+    { label: t("2.label"), desc: t("2.desc"), Icon: Stethoscope },
+    { label: t("3.label"), desc: t("3.desc"), Icon: Apple },
+  ];
+};
 
-export default function OurServices() {
+export default async function OurServices() {
+  const t = await getTranslations("services");
+  const leftSideCards = await getLeftSideCards();
+  const rightSideCards = await getRightSideCards();
   return (
     <section className=" snap-start flex flex-wrap xl:flex-nowrap gap-10 justify-center items-top relative p-5 md:p-20">
       <div className="max-w-prose bg-white px-5 py-20 h-full card backdrop-blur-sm max-h-[800px]">
-        <h1 className="title mb-10">Services</h1>
+        <h1 className="title mb-10">{t("title")}</h1>
         <p className={twMerge("text-justify ", typography())}>
-          Natura offers a comprehensive care program for the elderly, providing
-          tailored medical and personal services. Our highly qualified nurses
-          and caregivers are always available, ensuring personal care and
-          assistance to each resident.
-          <br />
-          <br />
-          The meals provided are fully adapted to the specific dietary and
-          health needs of the elderly. Experienced doctors, specializing in
-          cardiology and internal medicine, take care of the residents`&lsquo;`
-          health, while a modern ambulance service is available for emergency
-          transport and medical appointments upon request.
-          <br />
-          <br />
-          This holistic approach ensures a safe, comfortable, and supportive
-          environment for all residents.
+          {t.rich("desc", {
+            br: () => <br />,
+          })}
         </p>
       </div>
       <div className="flex max-w-prose flex-wrap *:grow order-first *:w-[20ch] sm:flex-row sm:flex-wrap gap-2 items-start xl:h-fit xl:flex-col">

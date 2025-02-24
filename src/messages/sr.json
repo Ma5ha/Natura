@@ -244,18 +244,9 @@
     "title": "Usluge",
     "desc": "Natura nudi sveobuhvatan program njege za starije osobe, pružajući prilagođene medicinske i lične usluge. Naše visokokvalifikovane medicinske sestre i njegovatelji su uvijek dostupni, osiguravajući ličnu njegu i podršku svakom korisniku. <br></br><br></br> Obroci su u potpunosti prilagođeni specifičnim dijetetskim i zdravstvenim potrebama starijih osoba. Iskusni ljekari, specijalizirani za kardiologiju i internu medicinu, brinu o zdravlju korisnika, dok je savremena ambulantna služba dostupna za hitan transport i medicinske preglede na zahtjev.<br></br> <br></br> Ovakav holistički pristup osigurava sigurno, udobno i podržavajuće okruženje za sve korisnike.",
     "leftSideCards": {
-      "1": {
-        "label": "Aktivnosti",
-        "data": "35"
-      },
-      "2": {
-        "label": "Zaposlenih",
-        "data": "45"
-      },
-      "3": {
-        "label": "Kreveta",
-        "data": "70"
-      }
+      "1": "Aktivnosti",
+      "2": "Zaposlenih",
+      "3": "Kreveta"
     },
     "rightSideCards": {
       "1": {
@@ -269,6 +260,55 @@
       "3": {
         "label": "Dijeta",
         "desc": "Ishrana se u potpunosti prilagođava životnoj dobi korisnika i može se prilagođavati u odnosu na zdravstveno stanje."
+      }
+    },
+    "sections": {
+      "1": {
+        "title": "Usluge smještaja",
+        "subtitle": "Pravimo smještaj u jednokrevetnim, dvokrevetnim i trokrevetnim sobama, svaka dizajnirana za potrebe stanara s različitim fizičkim i psihološkim uvjetima.",
+        "desc": [
+          "Sobe su opremljene modernim električnim medicinskim krevetima i panik tipkama.",
+          "Svaka soba ima privatnu kupaonicu, TV i pristup internetu."
+        ]
+      },
+      "2": {
+        "title": "Medicinska njega",
+        "subtitle": "Naši visokokvalificirani medicinski sestre i njegovatelji su uvijek dostupni za osigurati ličnu njegu svakom stanaru",
+        "desc": [
+          "Poznati liječnici specijalizirani za kardiologiju i internu medicinu pružaju medicinsko vodstvo.",
+          "Intenzivna njega uključuje nadzor, njegu i liječenje za kritično bolesne ili ozlijeđene pacijente. Vitalni znakovi i funkcije organa se redovito motre kako bi se omogućilo rano intervencije."
+        ]
+      },
+      "3": {
+        "title": "Rehabilitacija i fizioterapija",
+        "subtitle": "Naši programi fizioterapije su dizajnirani za poboljšanje pokretljivosti i op?eg dobrobita",
+        "desc": [
+          "Rješavamo uvjete kao što su Parkinsonova bolest, artritis i neurološki problemi.",
+          "Usluge uključuju manualnu terapiju, vježbe pokreta i prilagođene rehabilitacijske planove.",
+          "Cilj je očuvati i poboljšati zdravlje i neovisnost naših stanara."
+        ]
+      },
+      "4": {
+        "title": "Dietetske usluge",
+        "subtitle": "Prehrana igra važnu ulogu u održavanju zdravlja.",
+        "desc": [
+          "Obroci su u potpunosti prilagođeni starosti i zdravstvenim uvjetima naših stanara.",
+          "Individualne potrebe i preference dijetetski se pažljivo prilagođavaju."
+        ]
+      },
+      "5": {
+        "title": "Hitni prijevoz",
+        "subtitle": "Pružamo sigurno i pouzdano prijevoz za medicinske pregleda i hitne slučajeve.",
+        "desc": [
+          "Naša moderna ambulantna služba je opremljena medicinskim krevetima, kisikovim rezervoarima, policama za lijekove, IV stojalom i klima uređajem"
+        ]
+      },
+      "6": {
+        "title": "Slobodno vrijeme i dobrobit",
+        "subtitle": "Punokrvan i aktivan životni stil je dio našeg holističkog pristupa.",
+        "desc": [
+          "Stanari mogu sudjelovati u dnevnim aktivnostima dizajniranim za poboljšanje mentalnog i emocionalnog dobrobita"
+        ]
       }
     }
   },

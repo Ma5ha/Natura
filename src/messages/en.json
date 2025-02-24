@@ -244,18 +244,9 @@
     "title": "Services",
     "desc": "Natura offers a comprehensive care program for the elderly, providing tailored medical and personal services. Our highly qualified nurses and caregivers are always available, ensuring personal care and assistance to each resident.<br /><br />The meals provided are fully adapted to the specific dietary and health needs of the elderly. Experienced doctors, specializing in cardiology and internal medicine, take care of the residents' health, while a modern ambulance service is available for emergency transport and medical appointments upon request.<br /><br />This holistic approach ensures a safe, comfortable, and supportive environment for all residents.",
     "leftSideCards": {
-      "1": {
-        "label": "Activity",
-        "data": "35"
-      },
-      "2": {
-        "label": "Employed",
-        "data": "45"
-      },
-      "3": {
-        "label": "Beds",
-        "data": "70"
-      }
+      "1": "Activity",
+      "2": "Employed",
+      "3": "Beds"
     },
     "rightSideCards": {
       "1": {
@@ -269,6 +260,55 @@
       "3": {
         "label": "Diet",
         "desc": "The diet is fully adapted to the age of the user and can be adapted according to health status"
+      }
+    },
+    "sections": {
+      "1": {
+        "title": "Accommodation Services",
+        "subtitle": "We provide accommodations in single, double, and triple rooms, each designed to meet the needs of residents with varying physical and psychological conditions.",
+        "desc": [
+          " Rooms are equipped with modern electric medical beds and panic buttons.",
+          "Each room includes a private bathroom, TV, and internet access."
+        ]
+      },
+      "2": {
+        "title": "Medical Care",
+        "subtitle": "Our highly skilled nurses and caregivers are available 24/7 to ensure personalized care for every resident",
+        "desc": [
+          "Renowned doctors specializing in cardiology and internal medicine provide medical oversight.",
+          "Intensive care services include monitoring, nursing, and treatment for critically ill or injured patients. Vital signs and organ functions are regularly observed to enable early intervention."
+        ]
+      },
+      "3": {
+        "title": "Rehabilitation and Physiotherapy",
+        "subtitle": "Our physiotherapy programs are designed to improve mobility and overall well-being",
+        "desc": [
+          "We address conditions like Parkinson's disease, arthritis, and neurological issues.",
+          "Services include manual therapy, movement exercises, and tailored rehabilitation plans.",
+          "The goal is to preserve and enhance the health and independence of our residents."
+        ]
+      },
+      "4": {
+        "title": "Dietary Services",
+        "subtitle": "Nutrition plays a vital role in maintaining health.",
+        "desc": [
+          "Meals are fully adapted to the age and health conditions of our residents.",
+          "Individual dietary needs and preferences are carefully accommodated."
+        ]
+      },
+      "5": {
+        "title": "Emergency Transport",
+        "subtitle": "We provide safe and reliable transport for medical appointments and emergencies.",
+        "desc": [
+          "Our modern ambulance is equipped with medical beds, oxygen tanks, medication shelves, an IV stand, and air conditioning"
+        ]
+      },
+      "6": {
+        "title": "Leisure and Well-being",
+        "subtitle": "A fulfilling and active lifestyle is part of our holistic approach.",
+        "desc": [
+          "Residents can participate in daily activities designed to improve their mental and emotional well-being"
+        ]
       }
     }
   },
