@@ -20,9 +20,9 @@ export default async function PersonalCard({
   const articlesList3 = new Array(5)
     .fill(1)
     .map((_, i) => t(`article3.list.${i + 1}`));
-  const articlesList4 = new Array(4)
-    .fill(1)
-    .map((_, i) => t(`article4.list.${i + 1}`));
+  // const articlesList4 = new Array(4)
+  //   .fill(1)
+  //   .map((_, i) => t(`article4.list.${i + 1}`));
 
   return (
     <section

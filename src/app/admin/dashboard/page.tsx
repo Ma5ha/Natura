@@ -1,7 +1,7 @@
 "use client";
 
 import { button, typography } from "@/ui/variants";
-import { MouseEventHandler, use, useEffect, useRef, useState } from "react";
+import { MouseEventHandler, useEffect, useRef, useState } from "react";
 import { twMerge } from "tailwind-merge";
 import { getAllFolders } from "./actions";
 import { Plus } from "lucide-react";
