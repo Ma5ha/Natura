@@ -43,6 +43,10 @@ export default async function RootLayout(
       className={`${inter.variable} ${garamond.variable}`}
     >
       <head>
+        <meta
+          name="google-site-verification"
+          content="2NTVpHl-NzR08ZK4suxTCX__s2L5NyxdToMyxVrEP7Q"
+        />
         <link rel="icon" href="/natura.ico" />
       </head>
       <body className="font-inter h-screen bg-gray-50 bg-linear-to-tl from-gray-200/50 from-50% pt-[64px]!">
