@@ -2,6 +2,7 @@ import { button, typography } from "@/ui/variants";
 import { Clock, Cross, Info, Mail, MapPin } from "lucide-react";
 import { twMerge } from "tailwind-merge";
 import { getTranslations } from "next-intl/server";
+import { sendEmail } from "../actions";
 import Input from "@/app/components/input";
 import {
   ADDRESS,
@@ -78,7 +79,10 @@ export default async function Contact() {
         ))}
       </div>
 
-      <form className="card *:mb-8 w-full max-w-prose  bg-white self-start">
+      <form
+        className="card *:mb-8 w-full max-w-prose  bg-white self-start"
+        action={sendEmail}
+      >
         <h2 className="title">{t("title")}</h2>
 
         <div className="flex flex-wrap gap-8 w-full">
@@ -105,7 +109,10 @@ export default async function Contact() {
 
         <div className="input-control grow">
           <label>{t("form.message")}</label>
-          <textarea placeholder={t("form.placeholders.message")} />
+          <textarea
+            name="message"
+            placeholder={t("form.placeholders.message")}
+          />
         </div>
 
         <button className={twMerge(button(), "ml-auto")}>
