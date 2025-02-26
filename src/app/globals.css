@@ -74,7 +74,8 @@
   border-radius: 5px 5px 5px 5px;
   filter: drop-shadow(0 0 0.1px rgb(145, 145, 145));
 
-  @apply bg-white relative shadow-xs inline-block;
+  @apply bg-white relative shadow-xs inline-block hover:opacity-40;
+  
 
   &::before {
     content: '';

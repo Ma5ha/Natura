@@ -1,7 +1,7 @@
 import { tv } from "tailwind-variants";
 
 export const button = tv({
-  base: "font-bold py-3 px-4 text-white rounded-sm bg-primary-700 flex gap-2",
+  base: "font-bold py-3 px-4 text-white rounded-sm bg-primary-700 flex gap-2 cursor-pointer",
   variants: {
     sematic: {
       secondary: "bg-transparent text-primary-700 border border-primary-700",
