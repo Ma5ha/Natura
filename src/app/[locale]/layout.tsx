@@ -7,10 +7,12 @@ import { Metadata } from "next";
 
 import { Inter, EB_Garamond } from "next/font/google";
 const inter = Inter({
+  display: "swap",
   subsets: ["latin"],
   variable: "--font-inter",
 });
 const garamond = EB_Garamond({
+  display: "swap",
   subsets: ["latin"],
   variable: "--font-garamond",
 });
