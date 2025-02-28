@@ -44,5 +44,9 @@
   "overrides": {
     "@types/react": "19.0.8",
     "@types/react-dom": "19.0.3"
+  },
+  "optionalDependencies": {
+    "@tailwindcss/oxide-linux-x64-gnu": "^4.0.9",
+    "lightningcss-linux-x64-gnu": "^1.29.1"
   }
 }
