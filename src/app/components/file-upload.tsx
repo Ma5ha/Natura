@@ -3,7 +3,6 @@ import { button, typography } from "@/ui/variants";
 import { Download, Upload } from "lucide-react";
 import { Ref, useRef, useState } from "react";
 import { twMerge } from "tailwind-merge";
-import { uploadFile } from "../admin/dashboard/actions";
 
 export const FileUpload: React.FC<{
   onChange?: (files: File[]) => void;

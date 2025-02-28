@@ -2,7 +2,7 @@
 import EmailTemplate from "./components/email-template";
 import { Resend } from "resend";
 const resend = new Resend(process.env.RESEND_API_KEY as string);
-export const sendEmail = async (formData: FormData) => {
+export const sendEmail = async () => {
   console.log("sending", process.env.RESEND_API_KEY);
   const result = await resend.emails.send({
     from: "delivered@resend.dev",
@@ -10,7 +10,6 @@ export const sendEmail = async (formData: FormData) => {
     subject: "test",
 
     react: (
-      //@ts-ignore
       <EmailTemplate
         subject={"test"}
         sender={"Mladen"}
