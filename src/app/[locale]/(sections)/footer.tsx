@@ -8,6 +8,7 @@ import { getLocale, getTranslations } from "next-intl/server";
 import { navigation } from "@/constants/nav";
 import { Link } from "@/i18n/routing";
 import { documents } from "@/constants/documentation";
+import { EMAIL, INFO_PHONE } from "@/constants/info";
 
 export default async function Footer() {
   const t = await getTranslations();
@@ -91,12 +92,12 @@ export default async function Footer() {
           <span className="flex items-center gap-2 md:ml-10">
             <Phone width={20} height={20} className="stroke-gray-500" />
             <a
-              href="tel:+387 57 223 945"
+              href={["tel:", INFO_PHONE].join("")}
               className={typography({
                 size: "medium",
               })}
             >
-              +38757/223-945
+              {INFO_PHONE}
             </a>
           </span>
           <span className="flex items-center gap-2 md:ml-4">
@@ -109,7 +110,7 @@ export default async function Footer() {
                 size: "medium",
               })}
             >
-              naturainfo@gmail.com
+              {EMAIL}
             </a>
           </span>
         </div>
