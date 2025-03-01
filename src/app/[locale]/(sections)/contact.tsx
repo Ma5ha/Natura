@@ -1,7 +1,8 @@
+"use client";
+/* eslint-disable  @typescript-eslint/no-explicit-any */
 import { button, typography } from "@/ui/variants";
 import { Clock, Cross, Info, Mail, MapPin } from "lucide-react";
 import { twMerge } from "tailwind-merge";
-import { getTranslations } from "next-intl/server";
 import { sendEmail } from "../actions";
 import Input from "@/app/components/input";
 import {
@@ -14,8 +15,17 @@ import {
   WORK_HOURS,
 } from "@/constants/info";
 
-const translateCards = async () => {
-  const t = await getTranslations("contact");
+import { useState } from "react";
+import { useTranslations } from "next-intl";
+
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { ContactForm, formSchema } from "../schema";
+import Show from "@/app/components/show";
+
+type T = (t: string) => string;
+
+const translateCards = (t: T) => {
   return [
     { title: t("email"), Icon: Mail, children: EMAIL },
     { title: t("address"), Icon: MapPin, children: ADDRESS },
@@ -49,9 +59,17 @@ const translateCards = async () => {
   ];
 };
 
-export default async function Contact() {
-  const t = await getTranslations("contact");
-  const info = await translateCards();
+export default function Contact() {
+  const t = useTranslations("contact");
+  const info = translateCards(t);
+
+  const form = useForm<ContactForm>({
+    mode: "onBlur",
+    resolver: zodResolver(formSchema),
+  });
+
+  const [isSent, setIsSent] = useState(false);
+
   return (
     <section
       id="contact"
@@ -79,47 +97,95 @@ export default async function Contact() {
         ))}
       </div>
 
-      <form
-        className="card *:mb-8 w-full max-w-prose  bg-white self-start"
-        action={sendEmail}
-      >
-        <h2 className="title">{t("title")}</h2>
+      <Show when={!isSent}>
+        <form
+          className="card *:mb-8 w-full max-w-prose  bg-white self-start"
+          onSubmit={form.handleSubmit(async (data) => {
+            const { sent } = await sendEmail(data);
+            setIsSent(sent);
+          })}
+        >
+          <h2 className="title">{t("title")}</h2>
 
-        <div className="flex flex-wrap gap-8 w-full">
-          <Input
-            label={t("form.email")}
-            placeholder={t("form.placeholders.email")}
-          />
-          <Input
-            label={t("form.subject")}
-            placeholder={t("form.placeholders.subject")}
-          />
+          <div className="flex flex-wrap gap-8 w-full">
+            <Input
+              label={t("form.email")}
+              placeholder={t("form.placeholders.email")}
+              type="email"
+              {...form.register("email")}
+              errorMessage={
+                form.formState.errors.email?.message &&
+                t(form.formState.errors.email?.message)
+              }
+            />
+            <Input
+              label={t("form.subject")}
+              placeholder={t("form.placeholders.subject")}
+              {...form.register("subject")}
+              errorMessage={
+                form.formState.errors.subject?.message &&
+                t(form.formState.errors.subject?.message)
+              }
+            />
+          </div>
+
+          <div className="flex flex-wrap gap-8 w-full">
+            <Input
+              label={t("form.firstName")}
+              placeholder={t("form.placeholders.firstName")}
+              {...form.register("name")}
+              errorMessage={
+                form.formState.errors.name?.message &&
+                t(form.formState.errors.name?.message)
+              }
+            />
+            <Input
+              label={t("form.lastName")}
+              placeholder={t("form.placeholders.lastName")}
+              {...form.register("lastName")}
+              errorMessage={
+                form.formState.errors.lastName?.message &&
+                t(form.formState.errors.lastName?.message)
+              }
+            />
+          </div>
+
+          <div className="input-control grow">
+            <label>{t("form.message")}</label>
+            <textarea
+              data-error={Boolean(form.formState.errors.message)}
+              className="data-[error=true]:border-red-700 data-[error=true]:border data-[error=true]:outline-red-700 "
+              placeholder={t("form.placeholders.message")}
+              {...form.register("message")}
+            />
+            <p
+              data-error={Boolean(form.formState.errors.message)}
+              className={twMerge(
+                typography(),
+                "text-red-700 hidden data-[error=true]:block"
+              )}
+            >
+              {form.formState.errors.message?.message &&
+                t(form.formState.errors.message?.message)}
+            </p>
+          </div>
+
+          <button
+            disabled={!form.formState.isValid}
+            className={twMerge(button(), "ml-auto disabled:bg-gray-200")}
+          >
+            <Mail />
+            {t("form.button")}
+          </button>
+        </form>
+      </Show>
+
+      <Show when={isSent}>
+        <div className="card w-full max-w-prose bg-white self-start min-h-[300px]">
+          <h2 className="title">{t("form.thanks")}</h2>
+          <p className={typography()}>{t("form.sentMessage")}</p>
         </div>
-
-        <div className="flex flex-wrap gap-8 w-full">
-          <Input
-            label={t("form.firstName")}
-            placeholder={t("form.placeholders.firstName")}
-          />
-          <Input
-            label={t("form.lastName")}
-            placeholder={t("form.placeholders.lastName")}
-          />
-        </div>
-
-        <div className="input-control grow">
-          <label>{t("form.message")}</label>
-          <textarea
-            name="message"
-            placeholder={t("form.placeholders.message")}
-          />
-        </div>
-
-        <button className={twMerge(button(), "ml-auto")}>
-          <Mail />
-          {t("form.button")}
-        </button>
-      </form>
+      </Show>
     </section>
   );
 }

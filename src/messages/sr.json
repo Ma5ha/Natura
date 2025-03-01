@@ -153,7 +153,16 @@
         "email": "Unesite vaš email",
         "subject": "Unesite temu poruke",
         "message": "Unesite vašu poruku"
-      }
+      },
+      "error": {
+        "name": "Unesite više ime",
+        "lastName": "Unesite više prezime",
+        "email": "Unesite validnu email adresu",
+        "subject": "Unesite temu vaše poruke",
+        "message": "Vaša poruka mora imati višе od 50 karaktera"
+      },
+      "thanks": "Hvala na vasoj poruci",
+      "sentMessage": "Poruka je uspjesno poslata. Neko od nas se ukratko sa vas kontaktira putem email-a."
     }
   },
   "about": {

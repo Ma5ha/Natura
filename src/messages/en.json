@@ -153,7 +153,16 @@
         "email": "Please enter your email",
         "subject": "Please enter subject",
         "message": "Please enter your message"
-      }
+      },
+      "error": {
+        "name": "Please enter a valid name",
+        "lastName": "Please enter a valid last name",
+        "email": "Please enter a valid email address",
+        "subject": "Please enter a valid subject",
+        "message": "Your message must have more than 50 characters"
+      },
+      "thanks": "Thank you for your message",
+      "sentMessage": "Message sent successfully. Someone from our team will contact you via email."
     }
   },
   "about": {

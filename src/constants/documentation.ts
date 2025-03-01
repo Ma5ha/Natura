@@ -1,6 +1,6 @@
 export const applicantQuestionnaires = {
   label: "questionnaire",
-  href: "protocol",
+  href: "/personal-card",
 };
 
 export const entranceProtocol = {
