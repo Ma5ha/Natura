@@ -6,6 +6,8 @@ import { routing } from "@/i18n/routing";
 import { Metadata } from "next";
 
 import { Inter, EB_Garamond } from "next/font/google";
+import { redirect } from "next/navigation";
+
 const inter = Inter({
   display: "swap",
   subsets: ["latin"],
@@ -33,6 +35,7 @@ export default async function RootLayout(
   }>
 ) {
   const params = await props.params;
+  if (["sr", "en"].includes(params.locale) === false) redirect("/sr");
 
   const { children } = props;
 
