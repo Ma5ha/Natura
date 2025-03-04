@@ -22,7 +22,22 @@ export default async function Hero() {
               semantic: "largeTitle",
             })}
           >
-            {t("home.hero.title")}
+            {t.rich("home.hero.title", {
+              span: (text) => (
+                <span
+                  className={twMerge(
+                    "first-letter:text-primary h-fit inline-block",
+                    typography({
+                      color: "black",
+                      semantic: "largeTitle",
+                      font: "serif",
+                    })
+                  )}
+                >
+                  {text}
+                </span>
+              ),
+            })}
           </h1>
           <h2
             className={typography({

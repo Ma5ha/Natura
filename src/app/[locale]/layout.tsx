@@ -1,7 +1,11 @@
 import Footer from "./(sections)/footer";
 import Nav from "../components/nav";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages, setRequestLocale } from "next-intl/server";
+import {
+  getMessages,
+  getTranslations,
+  setRequestLocale,
+} from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { Metadata } from "next";
 
@@ -18,14 +22,27 @@ const garamond = EB_Garamond({
   subsets: ["latin"],
   variable: "--font-garamond",
 });
-export const metadata: Metadata = {
-  icons: { icon: "/natura.svg" },
-  title: "Natura",
-  description: "...",
-};
+
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{
+    locale: "sr" | "en";
+  }>;
+}) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "meta" });
+  return {
+    icons: { icon: "/natura.svg" },
+    title: t("title"),
+    description: t("description"),
+  } as Metadata;
+}
+
 export default async function RootLayout(
   props: Readonly<{
     children: React.ReactNode;

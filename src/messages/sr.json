@@ -9,6 +9,10 @@
     "menu": "Meni",
     "documents": "Dokumenti"
   },
+  "meta": {
+    "title": "Dom za starija lica Natura",
+    "description": "Dom za starija lica Natura se nalazi u Palama. Nudimo njegu za starije osobe u mirnom okruženju. Nudimo više opcija kreveta, takođe i njegu za osobe sa razlicitim stepenom nepokretnosti, ili demencije."
+  },
   "documents": {
     "questionnaire": "Lični list korisnika",
     "protocol": "Protokol za prijem"
@@ -23,12 +27,12 @@
   },
   "home": {
     "hero": {
-      "title": "Iskusite mirnu, personalizovanu njegu za starije",
-      "subtitle": "Mirno okruženje, prilagođeno samo vama",
-      "desc": "U Naturi, pružamo izvanrednu njegu starijih osoba u mirnom, prirodnom okruženju, dizajniranom da podrži fizičko zdravlje, emocionalno blagostanje i osećaj zajednice"
+      "title": "Dom za starija lica  <span>Natura</span>",
+      "subtitle": "Mirno okruženje,prilagođeno samo vama",
+      "desc": "U domu za starija lica Natura, pružamo izvanrednu njegu starijih osoba u mirnom, prirodnom okruženju, dizajniranom da podrži fizičko zdravlje, emocionalno blagostanje i osećaj zajednice"
     },
     "summary": {
-      "subtitle": "Personalizirana njega za starije u mirnom, prirodnom okruženju.",
+      "subtitle": "U našem domu možete dobiti najbolju njegu za starije. Pružamo više opcija kreveta, kao i njegu za osobe sa različitim stepenom nepokretnosti, ili demencije.",
       "list": {
         "1": {
           "title": "Opcije soba",

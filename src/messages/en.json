@@ -9,6 +9,10 @@
     "menu": "Menu",
     "documents": "Documents"
   },
+  "meta": {
+    "title": "Natura Elderly Home",
+    "description": "Natura Elderly Home is located in Pale. We offer care for the elderly in a peaceful environment. We offer various room options, as well as care for people with different levels of mobility or dementia."
+  },
   "documents": {
     "questionnaire": "User Questionnaire",
     "protocol": "Admission Protocol"
@@ -23,12 +27,12 @@
   },
   "home": {
     "hero": {
-      "title": "Experience Peaceful, Personalized Senior Care",
-      "subtitle": "A Tranquil Setting, Tailored Just for You",
-      "desc": "At Natura, we provide exceptional elderly care in a calm, nature-filled environment, designed to support physical health, emotional well-being, and a sense of community"
+      "title": "Elderly Home  <span>Natura</span>",
+      "subtitle": "Peaceful environment, tailored to your needs",
+      "desc": "At Natura Elderly Home, we provide exceptional care for the elderly in a peaceful, natural environment, designed to support physical health, emotional well-being, and a sense of community."
     },
     "summary": {
-      "subtitle": "Personalized elderly care in a peaceful, nature-filled environment.",
+      "subtitle": "In our home, you can get the best care for the elderly. We offer various room options, as well as care for people with different levels of mobility or dementia.",
       "list": {
         "1": {
           "title": "Room options",
