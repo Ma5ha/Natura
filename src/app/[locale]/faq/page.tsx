@@ -4,6 +4,15 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { FC } from "react";
 import { twMerge } from "tailwind-merge";
 
+const createQuestion = (question: string, answer: string) => ({
+  "@type": "Question",
+  name: question,
+  acceptedAnswer: {
+    "@type": "Answer",
+    text: answer,
+  },
+});
+
 const Faq: FC<{
   params: Promise<{ locale: "sr" | "en" }>;
 }> = async ({ params }) => {
@@ -15,8 +24,20 @@ const Faq: FC<{
     answer: t(`questions.${i + 1}.answer`),
   }));
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faq.map(({ question, answer }) =>
+      createQuestion(question, answer)
+    ),
+  };
+
   return (
     <section className="snap-start page">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="max-w-[70ch] mx-auto">
         <h2
           className={twMerge(

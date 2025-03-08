@@ -1,6 +1,7 @@
 import { setRequestLocale } from "next-intl/server";
 
 import dynamic from "next/dynamic";
+import JsonLD from "./(sections)/json-ld";
 
 const Hero = dynamic(() => import("./(sections)/hero"));
 const Contact = dynamic(() => import("./(sections)/contact"));
@@ -16,6 +17,7 @@ export default async function Home({
   setRequestLocale(locale);
   return (
     <>
+      <JsonLD />
       <Hero />
       <Summary />
       <Testimonial />

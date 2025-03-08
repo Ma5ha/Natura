@@ -4,6 +4,7 @@ import Mission from "./(sections)/mission";
 import WeOffer from "./(sections)/offer";
 import Testimonial from "@/app/components/testimonials";
 import { setRequestLocale } from "next-intl/server";
+import JsonLD from "./(sections)/json-ld";
 
 export default async function AboutPage({
   params,
@@ -14,6 +15,7 @@ export default async function AboutPage({
   setRequestLocale(locale);
   return (
     <div className="flex flex-col justify-center items-center">
+      <JsonLD />
       <Hero />
       <Mission />
       <Values />
