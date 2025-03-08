@@ -21,7 +21,9 @@ export default async function Summary() {
         >
           <span className="text-primary">N</span>atura
         </h2>
-        <h3 className={typography({})}>{t("subtitle")}</h3>
+        <h3 className={twMerge(typography({}), "max-w-[65ch]")}>
+          {t("subtitle")}
+        </h3>
 
         <ul className="mt-10 max-w-lg  marker:text-primary marker:text-[30px] marker:text-center">
           {list.map(({ title, text }) => (
