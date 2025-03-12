@@ -386,5 +386,56 @@
       }
     },
     "button": "Download document"
-  }
+  },
+  "testimonials": [
+    {
+      "title": "Exceptional Care for Patients",
+      "body": [
+        "By coming here, I saw what it truly means to take care of patients. I am extremely satisfied with the service and wish you many more years of success."
+      ],
+      "signature": "Ljubica"
+    },
+    {
+      "title": "Excellent Hygiene and Friendly Staff",
+      "body": [
+        "The hygiene is excellent, the staff is kind, and I am always welcomed with a smile. Keep up the great work!"
+      ],
+      "signature": "Stana M."
+    },
+    {
+      "title": "Professional and Responsible Staff",
+      "body": [
+        "I take this opportunity to praise the wonderful hosts and great management. The staff is professional and responsible. All compliments!"
+      ],
+      "signature": "Dragan"
+    },
+    {
+      "title": "Five Years of Satisfaction",
+      "body": [
+        "I have been in the 'Natura' home for five years now and can only express my highest praise. I have been an athlete since a young age, and thanks to the medical staff and physiotherapists, I am especially grateful to Dragan for his perseverance..."
+      ],
+      "signature": "Vera M."
+    },
+    {
+      "title": "Great Service and Kindness",
+      "body": [
+        "I must commend you, you are amazing! Thank you for your smile and the service you provide."
+      ],
+      "signature": "Mladen"
+    },
+    {
+      "title": "Extremely Satisfied with the Service",
+      "body": [
+        "I can say that I am extremely satisfied with the service. My mother is feeling much better thanks to you. Many thanks for everything!"
+      ],
+      "signature": "Srđan"
+    },
+    {
+      "title": "Praise",
+      "body": [
+        "Hygiene, food, ambiance, staff... Everything is excellent."
+      ],
+      "signature": "Dragana"
+    }
+  ]
 }

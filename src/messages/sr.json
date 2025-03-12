@@ -386,5 +386,59 @@
       }
     },
     "button": "Preuzmi dokument"
-  }
+  },
+  "testimonials": [
+    {
+      "title": "Izuzetna briga o pacijentima",
+      "body": [
+        "Dolaskom ovde sam videla šta znači voditi brigu o svojim pacijentima.",
+        "Prezadovoljna sam uslugom i želim vam još mnogo godina uspeha u radu."
+      ],
+      "signature": "Ljubica"
+    },
+    {
+      "title": "Odlična higijena i ljubazno osoblje",
+      "body": [
+        "Higijena odlična, ljubazno osoblje, uvek sam dočekana s osmehom. Samo tako nastavite!"
+      ],
+      "signature": "Stana M."
+    },
+    {
+      "title": "Profesionalno i odgovorno osoblje",
+      "body": [
+        "Koristim priliku da pohvalim divne domaćine i divne gazde. Osoblje je profesionalno i odgovorno. Sve pohvale!"
+      ],
+      "signature": "Dragan"
+    },
+    {
+      "title": "Pet godina zadovoljstva",
+      "body": [
+        "Kod vas sam u domu „Natura” već pet godina i mogu samo reći sve pohvale.",
+        "Sportista sam od mladih dana i zahvaljujući pomoći medicinskog osoblja i fizioterapeuta, posebno sam zahvalan doktoru Draganu na istrajnosti..."
+      ],
+      "signature": "Vera M."
+    },
+    {
+      "title": "Sjajna usluga i ljubaznost",
+      "body": [
+        "Moram da vas pohvalim, sjajni ste! Hvala vam na vašem osmehu i pruženoj usluzi."
+      ],
+      "signature": "Mladen"
+    },
+    {
+      "title": "Prezadovoljan uslugom",
+      "body": [
+        "Mogu reći da sam prezadovoljan uslugom. Moja mama se oseća mnogo bolje zahvaljujući vama. Puno hvala na svemu!"
+      ],
+      "signature": "Srđan"
+    },
+    {
+      "title": "Pohvale",
+      "body": [
+        "Higijena, hrana, ambijent, osoblje...",
+        "Sve pohvale..."
+      ],
+      "signature": "Dragana"
+    }
+  ]
 }
