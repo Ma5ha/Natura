@@ -7,7 +7,6 @@ const Hero = dynamic(() => import("./(sections)/hero"));
 const Contact = dynamic(() => import("./(sections)/contact"));
 const Testimonial = dynamic(() => import("../components/testimonials"));
 const Summary = dynamic(() => import("./(sections)/summary"));
-const GoogleMap = dynamic(() => import("./(sections)/map"));
 export default async function Home({
   params,
 }: {
