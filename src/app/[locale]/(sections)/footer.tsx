@@ -116,8 +116,23 @@ export default async function Footer() {
         </div>
 
         <div className="bg-inherit flex gap-2 *:size-[24px] items-center">
-          <Image alt="instagram logo" src={instagram} width={24} height={24} />
-          <Image alt="facebook logo" src={facebook} width={24} height={24} />
+          <a
+            href="https://www.instagram.com/dom_za_starija_lica_natura/"
+            target="_blank"
+          >
+            <Image
+              alt="instagram logo"
+              src={instagram}
+              width={24}
+              height={24}
+            />
+          </a>
+          <a
+            href="https://www.facebook.com/domzastarijalicaNatura/"
+            target="_blank"
+          >
+            <Image alt="facebook logo" src={facebook} width={24} height={24} />
+          </a>
         </div>
       </div>
     </footer>

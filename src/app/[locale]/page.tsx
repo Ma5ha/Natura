@@ -22,7 +22,6 @@ export default async function Home({
       <Summary />
       <Testimonial />
       <Contact />
-      <GoogleMap />
     </>
   );
 }
