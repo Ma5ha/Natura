@@ -128,7 +128,7 @@
         "doctors": "Ljekari",
         "diet": "Ishrana",
         "desc": {
-          "services": "„Natura“ nudi sveobuhvatan program njege za starije osobe, pružajući prilagođene medicinske i lične usluge. Naše visokokvalifikovane medicinske sestre i njegovatelji su uvijek dostupni, osiguravajući ličnu njegu i podršku svakom korisniku. <br></br><br></br> Obroci su u potpunosti prilagođeni specifičnim dijetetskim i zdravstvenim potrebama starijih osoba. Iskusni ljekari, specijalizirani za kardiologiju i internu medicinu, brinu o zdravlju korisnika, dok je savremena ambulantna služba dostupna za hitan transport i medicinske preglede na zahtjev.<br></br> <br></br> Ovakav holistički pristup osigurava sigurno, udobno i podržavajuće okruženje za sve korisnike.",
+          "services": "„Natura“ nudi sveobuhvatan program njege za starije osobe, pružajući prilagođene medicinske i lične usluge. Naše visokokvalifikovane medicinske sestre i njegovatelji su uvijek dostupni, osiguravajući ličnu njegu i podršku svakom korisniku. <br></br><br></br> Obroci su u potpunosti prilagođeni specifičnim dijetetskim i zdravstvenim potrebama starijih osoba. Iskusni ljekari, specijalizirani za kardiologiju i internu medicinu, brinu o zdravlju korisnika, dok je savremena ambulantna služba dostupna za hitan transport i medicinske preglede na zahtjev.<br></br> <br></br> Ovakav holistički pristup osigurava sigurno, udobno i podsticajno okruženje za sve korisnike.",
           "staff": "Naše visokokvalifikovane medicinske sestre i njegovateljice, kao i ostalo osoblje su uvijek tu za naše korisnike.",
           "doctors": "Mi se brinemo o zdravlju naših korisnika, dok je moderna ambulanta za hitne prevoze i liječenje dostupna za hitne slučajeve i medicinske konsultacije po zahtjevu.",
           "diet": "Ishrana se u potpunosti prilagođava životnoj dobi korisnika i može se prilagođavati u odnosu na zdravstveno stanje."
@@ -172,16 +172,16 @@
   "about": {
     "hero": {
       "title": "Naša priča",
-      "desc": "U 2012. Natura je započela s idejom da stvori više od doma za njegu - htjeli smo stvoriti dom. Smješten u mirnom i pitoresknom okruženju, naš prostor je dizajniran da ponudi starijima odmor gdje se osjećaju zbrinuto i povezano. Tijekom godina, rastemo u pouzdanu kuću gdje se stariji i njihove obitelji osjećaju sigurno, znajući da su njihovi voljeni u brizi.",
-      "action": "Slobodno nas <link>kontaktirajte</link>!"
+      "desc": "U 2012. Natura je započela s idejom da stvori više od doma za njegu - htjeli smo stvoriti dom. Smješten u mirnom i pitoresknom okruženju, naš prostor je dizajniran da ponudi starijima odmor gdje se osjećaju zbrinuto i povezano. Tokom godina, rastemo u pouzdanu kuću gdje se stariji i njihove porodice osjećaju sigurno, znajući da su njihovi voljeni u zbrinuti.",
+      "action": "<link>Kontaktirajte</link> nas!"
     },
     "mission": {
       "title": "Nudimo najbolju njegu za starije",
-      "mission": "U Naturi, ciljamo stvoriti prostor ispunjen pažnjom, poštovanjem i dostojanstvom. Naše je fokusirano na stvaranje okruženja gdje se svaki stanar osjeća vrijedno, sigurno i pravično podržano tijekom ovog važnog dijela života. S milosrđem u srcu, nastojimo osigurati dom koji ne samo poboljšava zdravlje, već i sreću, osiguravajući da svaki dan donosi udobnost i radost.",
-      "goals": "Želimo stvoriti okruženje u kojemu stariji mogu živjeti s dostojanstvom, izgraditi zna?ajne veze i iskusiti njegu koja stvarno razumije i podržava njihove potrebe. Želimo stvoriti mjesto gdje svaki pojedinac osjeća da je vrijedan i drag. Kroz suosjećanje i pažnju, osiguravamo da svaki stanar cvjeta fyzicki, emocionalno i socijalno."
+      "mission": "U Naturi, ciljamo stvoriti prostor ispunjen pažnjom, poštovanjem i dostojanstvom. Mi se fokusiramo na stvaranje okruženja gdje se svaki stanar osjeća vrjednovano i sigurno, tokom ovog važnog dijela života. Nastojimo osigurati dom koji ne samo poboljšava zdravlje, već i sreću, osiguravajući da svaki dan donosi udobnost i radost.",
+      "goals": "Želimo stvoriti okruženje u kojemu stariji mogu živjeti s dostojanstvom, izgraditi značajne veze i iskusiti njegu koja stvarno razumije i podržava njihove potrebe. Želimo stvoriti mjesto gdje svaki pojedinac osjeća da je vrijednovan i drag. Kroz saosjećanje i pažnju, osiguravamo da svaki stanar cvjeta fizički, emocionalno i socijalno."
     },
     "values": {
-      "title": "Podjelićemo sa <span>vama</span>",
+      "title": "Nudimo <span>vam</span>",
       "1": {
         "title": "Ljubav",
         "desc": "Tretiramo svakog starijeg kao člana porodice."
@@ -192,11 +192,11 @@
       },
       "3": {
         "title": "Poštovanje",
-        "desc": "Poštujemo svaku individualnu priču, potrebe i dostojanstvo."
+        "desc": "Poštujemo svaku individualnu priču i potrebe"
       },
       "4": {
         "title": "Zajednicu",
-        "desc": "Prižamo osjećaj pripadnosti i zajedništva."
+        "desc": "Pružamo osjećaj pripadnosti i zajedništva."
       }
     },
     "services": {
@@ -278,51 +278,52 @@
     "sections": {
       "1": {
         "title": "Usluge smještaja",
-        "subtitle": "Pravimo smještaj u jednokrevetnim, dvokrevetnim i trokrevetnim sobama, svaka dizajnirana za potrebe stanara s različitim fizičkim i psihološkim uvjetima.",
+        "subtitle": "Pravimo smještaj u jednokrevetnim, dvokrevetnim i trokrevetnim sobama, svaka dizajnirana za potrebe stanara s različitim fizičkim i psihološkim potrebama.",
         "desc": [
-          "Sobe su opremljene modernim električnim medicinskim krevetima i panik tipkama.",
-          "Svaka soba ima privatnu kupaonicu, TV i pristup internetu."
+          "Sobe su opremljene modernim električnim medicinskim krevetima i panik tasterima.",
+          "Svaka soba ima privatno kupatilo, TV i pristup internetu."
         ]
       },
       "2": {
         "title": "Medicinska njega",
-        "subtitle": "Naši visokokvalificirani medicinski sestre i njegovatelji su uvijek dostupni za osigurati ličnu njegu svakom stanaru",
+        "subtitle": "Naši visokokvalificirani medicinske sestre i njegovatelji su uvijek dostupni za osigurati ličnu njegu svakom stanaru",
         "desc": [
-          "Poznati liječnici specijalizirani za kardiologiju i internu medicinu pružaju medicinsko vodstvo.",
-          "Intenzivna njega uključuje nadzor, njegu i liječenje za kritično bolesne ili ozlijeđene pacijente. Vitalni znakovi i funkcije organa se redovito motre kako bi se omogućilo rano intervencije."
+          "Poznati doktori specijalizirani za kardiologiju i internu medicinu pružaju medicinske usluge.",
+          "Intenzivna njega uključuje nadzor, njegu i liječenje za kritično bolesne ili povrjeđene pacijente. Vitalni znakovi i funkcije organa se redovno motre kako bi se omogućila pravovremna intervencija."
         ]
       },
       "3": {
         "title": "Rehabilitacija i fizioterapija",
-        "subtitle": "Naši programi fizioterapije su dizajnirani za poboljšanje pokretljivosti i op?eg dobrobita",
+        "subtitle": "Naši programi fizioterapije su dizajnirani za poboljšanje pokretljivosti i opšteg zdravlja",
         "desc": [
-          "Rješavamo uvjete kao što su Parkinsonova bolest, artritis i neurološki problemi.",
+          "Pružamo njegu za Parkinsonovu bolest, artritis i neurološki probleme.",
           "Usluge uključuju manualnu terapiju, vježbe pokreta i prilagođene rehabilitacijske planove.",
-          "Cilj je očuvati i poboljšati zdravlje i neovisnost naših stanara."
+          "Cilj je očuvati i poboljšati zdravlje i nezavisnost naših stanara."
         ]
       },
       "4": {
         "title": "Dietetske usluge",
         "subtitle": "Prehrana igra važnu ulogu u održavanju zdravlja.",
         "desc": [
-          "Obroci su u potpunosti prilagođeni starosti i zdravstvenim uvjetima naših stanara.",
+          "Obroci su u potpunosti prilagođeni starosti i zdravstvenim potrebama naših stanara.",
           "Individualne potrebe i preference dijetetski se pažljivo prilagođavaju."
         ]
       },
       "5": {
-        "title": "Hitni prijevoz",
-        "subtitle": "Pružamo sigurno i pouzdano prijevoz za medicinske pregleda i hitne slučajeve.",
+        "title": "Hitni prevoz",
+        "subtitle": "Pružamo sigurno i pouzdano prevoz za medicinske preglede i hitne slučajeve.",
         "desc": [
-          "Naša moderna ambulantna služba je opremljena medicinskim krevetima, kisikovim rezervoarima, policama za lijekove, IV stojalom i klima uređajem"
+          "Naša moderna ambulantna služba je opremljena medicinskim krevetima, kiseonikovim rezervama, policama za lijekove, IV stalkom i klima uređajem"
         ]
       },
       "6": {
-        "title": "Slobodno vrijeme i dobrobit",
-        "subtitle": "Punokrvan i aktivan životni stil je dio našeg holističkog pristupa.",
+        "title": "Slobodno vrijeme i kvalitet života",
+        "subtitle": "Pun i aktivan životni stil je dio našeg holističkog pristupa.",
         "desc": [
-          "Stanari mogu sudjelovati u dnevnim aktivnostima dizajniranim za poboljšanje mentalnog i emocionalnog dobrobita"
+          "Stanari mogu sudjelovati u dnevnim aktivnostima dizajniranim za poboljšanje mentalnog i emocionalnog stanja"
         ]
-      }
+      },
+      "contactUs": "Kontaktirajte nas"
     }
   },
   "personalCard": {

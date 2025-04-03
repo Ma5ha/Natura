@@ -56,9 +56,9 @@ export default async function Detailed() {
         </ul>
         <Link
           href="/#contact"
-          className={twMerge(button({ sematic: "ghost" }))}
+          className={twMerge(button({ sematic: "ghost" }), "ml-auto")}
         >
-          Contact us!
+          {t("contactUs")}
         </Link>
       </div>
     </section>
