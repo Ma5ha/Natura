@@ -52,7 +52,8 @@ export default async function RootLayout(
   }>
 ) {
   const params = await props.params;
-  if (["sr", "en"].includes(params.locale) === false) redirect("/sr");
+  if (["sr", "en", "sitemap.xml"].includes(params.locale) === false)
+    redirect("/sr");
 
   const { children } = props;
 

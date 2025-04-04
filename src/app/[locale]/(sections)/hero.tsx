@@ -2,12 +2,13 @@ import { button, typography } from "@/ui/variants";
 import { getLocale, getTranslations } from "next-intl/server";
 import { twMerge } from "tailwind-merge";
 import { Link } from "@/i18n/routing";
-
 import HeroImage from "./hero-image";
+import { tVersion } from "@/util/t-version";
 
-export default async function Hero() {
+export default async function Hero({ version }: { version?: string }) {
   const local = await getLocale();
   const t = await getTranslations();
+
   return (
     <section
       id="hero"
@@ -22,7 +23,7 @@ export default async function Hero() {
               semantic: "largeTitle",
             })}
           >
-            {t.rich("home.hero.title", {
+            {t.rich(tVersion("home.hero.title", version), {
               span: (text) => (
                 <span
                   className={twMerge(

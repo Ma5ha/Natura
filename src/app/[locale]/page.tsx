@@ -1,26 +1,12 @@
 import { setRequestLocale } from "next-intl/server";
+import Home from "./home";
 
-import dynamic from "next/dynamic";
-import JsonLD from "./(sections)/json-ld";
-
-const Hero = dynamic(() => import("./(sections)/hero"));
-const Contact = dynamic(() => import("./(sections)/contact"));
-const Testimonial = dynamic(() => import("../components/testimonials"));
-const Summary = dynamic(() => import("./(sections)/summary"));
-export default async function Home({
+export default async function Page({
   params,
 }: {
   params: Promise<{ locale: "sr" | "en" }>;
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  return (
-    <>
-      <JsonLD />
-      <Hero />
-      <Summary />
-      <Testimonial />
-      <Contact />
-    </>
-  );
+  return <Home locale={locale} />;
 }

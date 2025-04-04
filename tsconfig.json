@@ -33,7 +33,8 @@
       ],
       "@constants/*": [
         "./src/constants/*"
-      ]
+      ],
+      "@util/*": ["./src/util/*"]
     },
     "target": "ES2017"
   },
