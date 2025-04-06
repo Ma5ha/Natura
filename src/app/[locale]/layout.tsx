@@ -76,7 +76,7 @@ export default async function RootLayout(
         <NextIntlClientProvider messages={messages}>
           <Nav />
 
-          <main className="bg-primary/250 h-full w-full snap-y snap-mandatory overflow-auto ">
+          <main className="bg-primary/250 h-full w-full overflow-auto ">
             {children}
             <Footer />
           </main>
