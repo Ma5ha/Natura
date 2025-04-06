@@ -21,7 +21,7 @@ export default async function Documents({
     .fill(1)
     .map((value, i) => t(`otherList.${value + i}`));
   return (
-    <section className="page snap-start flex flex-col items-center">
+    <section className="page snap-start flex flex-col items-center md:card md:bg-white md:mx-auto md:my-10">
       <div>
         <h1
           className={twMerge(

@@ -27,7 +27,7 @@ export default async function PersonalCard({
   return (
     <section
       className={twMerge(
-        "page snap-start flex flex-col justify-center items-center",
+        "page snap-start flex flex-col justify-center items-center md:card md:bg-white md:mx-auto md:my-10 md:min-w-[700px]",
         typography()
       )}
     >

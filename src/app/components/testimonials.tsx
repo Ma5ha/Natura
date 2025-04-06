@@ -6,7 +6,7 @@ import { twMerge } from "tailwind-merge";
 const generateRandom = () => {
   const id: number[] = [];
   while (true) {
-    const number = Math.floor(Math.random() * 6);
+    const number = Math.floor(Math.random() * 5);
     if (!id.includes(number)) id.push(number);
     if (id.length === 3) break;
   }
