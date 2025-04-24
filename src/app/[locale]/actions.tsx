@@ -14,8 +14,8 @@ export const sendEmail = async ({
   message,
 }: ContactForm) => {
   await resend.emails.send({
-    from: "delivered@resend.dev",
-    to: "blagmash@gmail.com",
+    from: process.env.RESEND_SEND_DOMAIN!,
+    to: process.env.RESEND_SEND_FROM!,
     subject,
 
     react: (
