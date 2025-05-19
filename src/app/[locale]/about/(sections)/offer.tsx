@@ -40,7 +40,7 @@ export default async function WeOffer() {
                       color: "black",
                       semantic: "title",
                     }),
-                    "bg-primary-50/50 w-fit p-1"
+                    " w-fit p-1"
                   )}
                 >
                   {title}

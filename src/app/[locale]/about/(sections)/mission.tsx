@@ -7,7 +7,7 @@ import { twMerge } from "tailwind-merge";
 
 const pWarper = "lg:flex lg:flex-wrap lg:items-center w-fit space-y-2 *:grow";
 const p = "max-w-[40ch]";
-const image = "max-w-[40ch] m-auto";
+const image = "max-w-[40ch] m-auto w-full";
 export default async function Mission() {
   const t = await getTranslations("about.mission");
   return (

@@ -124,7 +124,7 @@ export default function HamburgerMenu() {
                   locale={local}
                   key={label}
                   className={twJoin(
-                    "ml-5  h-full pb-5 tracking-tighter  w-fit",
+                    "ml-5 h-full pb-5 tracking-tighter  w-fit text-gray-400",
                     href === pathname && "text-white!"
                   )}
                   href={href}
