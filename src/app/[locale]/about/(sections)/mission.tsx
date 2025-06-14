@@ -5,7 +5,7 @@ import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import { twMerge } from "tailwind-merge";
 
-const pWarper = "lg:flex lg:flex-wrap lg:items-center w-fit space-y-2 *:grow";
+const pWarper = "lg:flex lg:items-center w-fit space-y-2 *:grow";
 const p = "max-w-[40ch]";
 const image = "max-w-[40ch] m-auto w-full";
 export default async function Mission() {
@@ -15,7 +15,7 @@ export default async function Mission() {
       <div className="m-auto *:m-auto space-y-20  bg-white/50 p-5 rounded-lg">
         <h2
           className={twMerge(
-            "m-auto w-fit",
+            "m-auto w-fit text-center",
             typography({ semantic: "largeTitle", color: "black" })
           )}
         >
