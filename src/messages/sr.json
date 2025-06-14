@@ -204,8 +204,8 @@
         "message": "Unesite vašu poruku"
       },
       "error": {
-        "name": "Unesite više ime",
-        "lastName": "Unesite više prezime",
+        "name": "Unesite vaše ime",
+        "lastName": "Unesite vaše prezime",
         "email": "Unesite validnu email adresu",
         "subject": "Unesite temu vaše poruke",
         "message": "Vaša poruka mora imati višе od 50 karaktera"
