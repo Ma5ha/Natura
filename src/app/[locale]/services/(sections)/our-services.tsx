@@ -6,8 +6,8 @@ import { twMerge } from "tailwind-merge";
 const getLeftSideCards = async () => {
   const t = await getTranslations("services.leftSideCards");
   return [
-    { label: t("1"), data: 35, Icon: Volleyball },
-    { label: t("2"), data: 45, Icon: Users },
+    { label: t("1"), data: 45, Icon: Volleyball },
+    { label: t("2"), data: 35, Icon: Users },
     { label: t("3"), data: 70, Icon: Bed },
   ];
 };
