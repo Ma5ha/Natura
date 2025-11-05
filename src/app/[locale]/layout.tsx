@@ -40,6 +40,10 @@ export async function generateMetadata({
     icons: { icon: "/natura.svg" },
     title: t("title"),
     description: t("description"),
+    category: "healthcare",
+    alternates: {
+      canonical: `https://www.domnatura.com/${locale}`,
+    },
   } as Metadata;
 }
 
