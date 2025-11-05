@@ -10,7 +10,7 @@ export default async function JsonLD() {
     name: `${t("nav.about")} | Natura`,
     url: `https://www.domnatura.com/${locale}/about`,
     mainEntity: {
-      "@type": "NursingHome",
+      "@type": "Nursing",
       name: "Natura",
       description: t("meta.description"),
     },

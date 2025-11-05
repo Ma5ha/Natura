@@ -54,6 +54,7 @@ export default async function JsonLD() {
       "https://www.facebook.com/domzastarijalicaNatura",
       "https://www.instagram.com/dom_za_starija_lica_natura",
     ],
+    priceRange: "1500 BAM",
   };
 
   return (
