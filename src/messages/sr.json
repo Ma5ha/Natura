@@ -73,15 +73,15 @@
       "title-v13": "Smještaj za osobe sa invaliditetom <span>Natura</span>",
       "title-v14": "Dom za smještaj i brigu lica sa psiho-fizičkim tegobama <span>Natura</span>",
       "title-v15": "Dom za penzionere <span>Natura</span>",
-      "subtitle": "Mirno okruženje,prilagođeno samo vama",
-      "desc": "U domu za starija lica Natura, pružamo izvanrednu njegu starijih osoba u mirnom, prirodnom okruženju, dizajniranom da podrži fizičko zdravlje, emocionalno blagostanje i osećaj zajednice"
+      "subtitle": "Mirno okruženje,prilagođeno samo vama.",
+      "desc": "U domu za starija lica Natura, pružamo izvanrednu njegu starijih osoba u mirnom, prirodnom okruženju, dizajniranom da podrži fizičko zdravlje, emocionalno blagostanje i osjećaj zajednice."
     },
     "summary": {
       "subtitle": "U našem domu možete dobiti najbolju njegu za starije. Pružamo više opcija kreveta, kao i njegu za osobe sa različitim stepenom nepokretnosti, ili demencije.",
       "list": {
         "1": {
           "title": "Opcije soba",
-          "text": "Jednokrevetne, dvokrevetne i trokrevetne sobe, opremljene medicinskim krevetima, panik-taster, privatnim kupatilima, TV-om i internetom."
+          "text": "Jednokrevetne, dvokrevetne i trokrevetne sobe, opremljene medicinskim krevetima, panik-tasterima, privatnim kupatilima, TV-om i internetom."
         },
         "2": {
           "title": "Fizioterapijske usluge",
@@ -89,7 +89,7 @@
         },
         "3": {
           "title": "Intenzivne usluge njege",
-          "text": "specjalizovanizovana njega sa kontinuiranim nadzorom vitalnih znakova, osiguravajući pravovremene medicinske intervencije za pacijente s težim zdravstvenim stanjima."
+          "text": "Specijalizovana njega sa kontinuiranim nadzorom vitalnih znakova, osiguravajući pravovremene medicinske intervencije za pacijente s težim zdravstvenim stanjima."
         },
         "4": {
           "title": "Personalna njega",
@@ -97,7 +97,7 @@
         },
         "5": {
           "title": "Holistički pristup njezi za starije",
-          "text": "Fokusiramo se na stvaranju toplog, zajednički orijentisanog okruženja u kojem se svaki korisnik osjeća sigurnost i toplinu u prostoru koji zajedno gradimo"
+          "text": "Fokusiramo se na stvaranju toplog, zajednički orijentisanog okruženja u kojem svaki korisnik osjeća sigurnost i toplinu u prostoru koji zajedno gradimo."
         }
       }
     }
